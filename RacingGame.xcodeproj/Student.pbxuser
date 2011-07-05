@@ -1,0 +1,113 @@
+// !$*UTF8*$!
+{
+	3FF8BC5A13C3A4780057A01F /* RacingGame */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = RacingGame;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	3FF8BC6413C3A4880057A01F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
+	};
+	3FF8BC6513C3A4880057A01F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
+		name = "HelloWorldLayer.h: 10";
+		rLen = 0;
+		rLoc = 147;
+		rType = 0;
+		vrLen = 296;
+		vrLoc = 0;
+	};
+	3FF8BC6B13C3A4880057A01F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	3FF8BC6C13C3A4880057A01F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6FD1139313C3994400F01AFF /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 3FF8BC5A13C3A4780057A01F /* RacingGame */;
+		activeTarget = 6FD1139B13C3994400F01AFF /* RacingGame */;
+		codeSenseManager = 3FF8BC6C13C3A4880057A01F /* Code sense */;
+		executables = (
+			3FF8BC5A13C3A4780057A01F /* RacingGame */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 331588728;
+			PBXWorkspaceStateSaveDate = 331588728;
+		};
+		perUserProjectItems = {
+			3FF8BC6413C3A4880057A01F /* PBXBookmark */ = 3FF8BC6413C3A4880057A01F /* PBXBookmark */;
+			3FF8BC6513C3A4880057A01F /* PBXTextBookmark */ = 3FF8BC6513C3A4880057A01F /* PBXTextBookmark */;
+		};
+		sourceControlManager = 3FF8BC6B13C3A4880057A01F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	6FD1139B13C3994400F01AFF /* RacingGame */ = {
+		activeExec = 0;
+		executables = (
+			3FF8BC5A13C3A4780057A01F /* RacingGame */,
+		);
+	};
+	6FD1150813C3994500F01AFF /* HelloWorldLayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 312}}";
+			sepNavSelRange = "{147, 0}";
+			sepNavVisRange = "{0, 296}";
+		};
+	};
+}

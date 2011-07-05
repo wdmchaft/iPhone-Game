@@ -6,6 +6,9 @@
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
+//My Change
+
+
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
