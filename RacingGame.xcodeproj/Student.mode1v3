@@ -178,7 +178,7 @@
 	<key>FavBarConfig</key>
 	<dict>
 		<key>PBXProjectModuleGUID</key>
-		<string>3FFD949813C4A65C007F514A</string>
+		<string>3FDC5EF713C4A7FE00081940</string>
 		<key>XCBarModuleItemNames</key>
 		<dict/>
 		<key>XCBarModuleItems</key>
@@ -212,10 +212,7 @@
 				<string>action</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>debugger-enable-breakpoints</string>
-				<string>go</string>
 				<string>build-and-go</string>
-				<string>buildOrClean</string>
-				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>com.apple.ide.PBXToolbarStopButton</string>
 				<string>get-info</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
@@ -273,7 +270,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -298,7 +295,11 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 						<string>0 122 1280 880 0 0 1280 1002 </string>
+=======
+						<string>369 498 788 504 0 0 1280 1002 </string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RootViewController.m</string>
+								<string>HelloWorldLayer.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,16 +323,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RootViewController.m</string>
+										<string>HelloWorldLayer.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
+<<<<<<< HEAD
 										<string>3F5728E113C4A9DD00614691</string>
 										<key>history</key>
 										<array>
 											<string>3FFD94A113C4A686007F514A</string>
 											<string>3FFD94A213C4A686007F514A</string>
 											<string>3F5728C613C4A99E00614691</string>
+=======
+										<string>3FDC5EF413C4A7FE00081940</string>
+										<key>history</key>
+										<array>
+											<string>3FDC5EF213C4A7FE00081940</string>
+											<string>3FDC5EF313C4A7FE00081940</string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -345,7 +354,11 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1072, 640}}</string>
 								<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 								<string>0 122 1280 880 0 0 1280 1002 </string>
+=======
+								<string>369 498 788 504 0 0 1280 1002 </string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -367,7 +380,11 @@
 								<key>Frame</key>
 								<string>{{0, 645}, {1072, 194}}</string>
 								<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 								<string>0 122 1280 880 0 0 1280 1002 </string>
+=======
+								<string>369 498 788 504 0 0 1280 1002 </string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -391,9 +408,15 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
+<<<<<<< HEAD
 				<string>3F5728E213C4A9DD00614691</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>3F5728E313C4A9DD00614691</string>
+=======
+				<string>3FDC5EF513C4A7FE00081940</string>
+				<string>1CE0B1FE06471DED0097A5F4</string>
+				<string>3FDC5EF613C4A7FE00081940</string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -531,6 +554,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+<<<<<<< HEAD
 		<string>3F5728EC13C4A9DD00614691</string>
 		<string>3F5728ED13C4A9DD00614691</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -540,6 +564,13 @@
 	</array>
 	<key>WindowString</key>
 	<string>0 122 1280 880 0 0 1280 1002 </string>
+=======
+		<string>3FDC5EF813C4A7FE00081940</string>
+		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
+	</array>
+	<key>WindowString</key>
+	<string>369 498 788 504 0 0 1280 1002 </string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -615,8 +646,13 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
+<<<<<<< HEAD
 				<string>3FFD949913C4A65C007F514A</string>
 				<string>3F5728E413C4A9DD00614691</string>
+=======
+				<string>3FDC5EF813C4A7FE00081940</string>
+				<string>3FDC5EF913C4A7FE00081940</string>
+>>>>>>> 3865c2247041c18b84fc564abeca3a407980eb67
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -627,7 +663,7 @@
 			<key>WindowString</key>
 			<string>42 456 500 500 0 0 1280 1002 </string>
 			<key>WindowToolGUID</key>
-			<string>3FFD949913C4A65C007F514A</string>
+			<string>3FDC5EF813C4A7FE00081940</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

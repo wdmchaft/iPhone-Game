@@ -1,5 +1,6 @@
 //
 //  HelloWorldLayer.h
+//  Traffic
 //  Car Project
 //
 //  Created by iD Student Account on 7/5/11.
@@ -13,6 +14,10 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer
 {
+	CCSprite *trafficCar;
+	int trafficPositionX;
+	int trafficPositionY;
+	CGPoint pos;
 	int carA;
 	int carB;
 	int carC;
