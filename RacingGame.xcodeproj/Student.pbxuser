@@ -11,6 +11,9 @@
 		activeExecutable = 3F3ABF1913C4E682003A8D20 /* RacingGame */;
 		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* RacingGame */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* RacingGame */,
+		);
 		codeSenseManager = 3F3ABF2C13C4E689003A8D20 /* Code sense */;
 		executables = (
 			3F3ABF1913C4E682003A8D20 /* RacingGame */,
@@ -23,7 +26,7 @@
 					20,
 					833,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -38,11 +41,52 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331671170;
-			PBXWorkspaceStateSaveDate = 331671170;
+			PBXPerProjectTemplateStateSaveDate = 331671452;
+			PBXWorkspaceStateSaveDate = 331671452;
+		};
+		perUserProjectItems = {
+			3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */ = 3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */;
+			3F24BCC213C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC213C4E7F700A66D09 /* PBXBookmark */;
+			3F24BCC313C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC313C4E7F700A66D09 /* PBXBookmark */;
+			3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */ = 3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3F3ABF2B13C4E689003A8D20 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */;
+		name = "HelloWorldLayer.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 611;
+		vrLoc = 0;
+	};
+	3F24BCC213C4E7F700A66D09 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */;
+	};
+	3F24BCC313C4E7F700A66D09 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
+	};
+	3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 63";
+		rLen = 0;
+		rLoc = 1546;
+		rType = 0;
+		vrLen = 1210;
+		vrLoc = 574;
+	};
+	3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 616}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 611}";
 		};
 	};
 	3F3ABF1913C4E682003A8D20 /* RacingGame */ = {
@@ -86,6 +130,13 @@
 	3F3ABF2C13C4E689003A8D20 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2080}}";
+			sepNavSelRange = "{1546, 0}";
+			sepNavVisRange = "{574, 1210}";
+		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
 		activeExec = 0;

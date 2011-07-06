@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* RacingGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */; };
-		3F24BBFA13C4D1EC00A66D09 /* Highway6789.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BBF913C4D1EC00A66D09 /* Highway6789.png */; };
-		3F24BC1A13C4D45B00A66D09 /* Highway2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BC1913C4D45B00A66D09 /* Highway2.png */; };
+		3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */; };
 		3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
@@ -258,8 +257,7 @@
 		1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RacingGameAppDelegate.h; path = Classes/RacingGameAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		1F3B9A820EF2151B00286867 /* RacingGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacingGame_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F24BBF913C4D1EC00A66D09 /* Highway6789.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Highway6789.png; sourceTree = "<group>"; };
-		3F24BC1913C4D45B00A66D09 /* Highway2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Highway2.png; sourceTree = "<group>"; };
+		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
 		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
@@ -537,8 +535,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				3F24BBF913C4D1EC00A66D09 /* Highway6789.png */,
-				3F24BC1913C4D45B00A66D09 /* Highway2.png */,
 				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
@@ -655,6 +651,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F24BCBD13C4E7E200A66D09 /* Highway3.png */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
 				E02BB4FE126CA50F006E46A2 /* Icon@2x.png */,
 				E02BB4FF126CA50F006E46A2 /* Icon-Small@2x.png */,
@@ -1103,8 +1100,7 @@
 				E02BB507126CA50F006E46A2 /* Icon-Small-50.png in Resources */,
 				E02BB508126CA50F006E46A2 /* Icon-72.png in Resources */,
 				E02BB763126CC1E0006E46A2 /* iTunesArtwork in Resources */,
-				3F24BBFA13C4D1EC00A66D09 /* Highway6789.png in Resources */,
-				3F24BC1A13C4D45B00A66D09 /* Highway2.png in Resources */,
+				3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

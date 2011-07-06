@@ -60,7 +60,7 @@
 		self.isTouchEnabled=YES;
 		}
 		
-		roadWay=[CCSprite spriteWithFile:@"Highway2.png"];
+		roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
 		//fix the center point as the picture is too large (320x5000)
 		
 		
