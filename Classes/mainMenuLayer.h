@@ -6,13 +6,13 @@
 //  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
-
+//MAKE SURE TO INCLUDE THE BOOLEANS FOR THE CHEATS! I have them as comments so that the program will run smoothly
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer
+@interface MainMenuLayer : CCLayer
 {
 	CCSprite *trafficCar;
 	int trafficPositionX;
@@ -23,14 +23,11 @@
 	int carC;
 	int carD;
 	CCSprite *myCar;
-	NSMutableArray *enemies;
-	CCSprite *roadWay;
-	float i;
+	CCLabelTTF * welcome;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
+-(void)startGame;
 
--(int) randomlane;
--(int) randomlane2;
 @end

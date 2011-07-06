@@ -6,6 +6,20 @@
 			3F3ABF1913C4E682003A8D20 /* RacingGame */,
 		);
 	};
+	1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {903, 2249}}";
+			sepNavSelRange = "{333, 13}";
+			sepNavVisRange = "{0, 1268}";
+		};
+	};
+	1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {903, 646}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 369}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3F3ABF1913C4E682003A8D20 /* RacingGame */;
@@ -41,16 +55,17 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331671955;
-			PBXWorkspaceStateSaveDate = 331671955;
+			PBXPerProjectTemplateStateSaveDate = 331672278;
+			PBXWorkspaceStateSaveDate = 331672278;
 		};
 		perUserProjectItems = {
-			3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */ = 3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */;
+			3F0CA9D313C4E9A6009FB188 = 3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */;
 			3F24BCC113C4E7F700A66D09 = 3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */;
 			3F24BCC213C4E7F700A66D09 = 3F24BCC213C4E7F700A66D09 /* PBXBookmark */;
 			3F24BCC313C4E7F700A66D09 = 3F24BCC313C4E7F700A66D09 /* PBXBookmark */;
 			3F24BCC413C4E7F700A66D09 = 3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */;
 			3F24BCC713C4E91B00A66D09 = 3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */;
+			3F8E4FD813C4EADF00CB3A00 /* PBXTextBookmark */ = 3F8E4FD813C4EADF00CB3A00 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3F3ABF2B13C4E689003A8D20 /* Source Control */;
 		userBuildSettings = {
@@ -61,7 +76,7 @@
 		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
 		name = "HelloWorldLayer.m: 102";
 		rLen = 0;
-		rLoc = 2460;
+		rLoc = 2462;
 		rType = 0;
 		vrLen = 1066;
 		vrLoc = 1755;
@@ -99,16 +114,16 @@
 		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
 		name = "HelloWorldLayer.m: 125";
 		rLen = 0;
-		rLoc = 2820;
+		rLoc = 2822;
 		rType = 0;
 		vrLen = 1229;
 		vrLoc = 1618;
 	};
 	3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 616}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 611}";
+			sepNavIntBoundsRect = "{{0, 0}, {903, 646}}";
+			sepNavSelRange = "{645, 0}";
+			sepNavVisRange = "{0, 651}";
 		};
 	};
 	3F3ABF1913C4E682003A8D20 /* RacingGame */ = {
@@ -155,9 +170,26 @@
 	};
 	3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {903, 2093}}";
-			sepNavSelRange = "{2460, 0}";
-			sepNavVisRange = "{1755, 1066}";
+			sepNavIntBoundsRect = "{{0, 0}, {903, 2145}}";
+			sepNavSelRange = "{2251, 0}";
+			sepNavVisRange = "{1961, 974}";
+		};
+	};
+	3F8E4FD813C4EADF00CB3A00 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 102";
+		rLen = 0;
+		rLoc = 2462;
+		rType = 0;
+		vrLen = 1037;
+		vrLoc = 1784;
+	};
+	3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 1404}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1165}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {

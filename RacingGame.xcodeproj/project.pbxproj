@@ -16,6 +16,7 @@
 		3F0CA9EC13C4E9FC009FB188 /* Enemy-Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */; };
 		3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */; };
 		3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */; };
+		3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
 		504DFBD010AF12E9006D82FE /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */; };
@@ -270,6 +271,8 @@
 		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
 		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenuLayer.h; sourceTree = "<group>"; };
+		3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainMenuLayer.m; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
 		504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerRequest.h; sourceTree = "<group>"; };
@@ -587,6 +590,8 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */,
+				3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
 				E0F80F5E120A0182005866B8 /* RootViewController.h */,
 				E0F80F5F120A0182005866B8 /* RootViewController.m */,
@@ -1135,6 +1140,7 @@
 				1F3B9A2D0EF2145700286867 /* RacingGameAppDelegate.m in Sources */,
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
 				3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */,
+				3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

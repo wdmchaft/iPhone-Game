@@ -88,7 +88,7 @@
 			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			trafficPositionY = random() % 465+5;
 			int px = [self randomlane];
-			int px2 = [self randomlane2];
+			//int px2 = [self randomlane2];
 			trafficCar.position = ccp(px, trafficPositionY);
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
