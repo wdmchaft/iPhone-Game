@@ -62,20 +62,22 @@
 		
 		roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
 		//fix the center point as the picture is too large (320x5000)
-		
-		
-		roadWay.position = ccp(160,480);
+		roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
+		roadWay.position = ccp(160,0);
 		[self addChild:roadWay z:0];
+		roadWay2.position = ccp(160,1058);
+		[self addChild:roadWay2 z:0];		
 		[self schedule:@selector(nextFrame:)];
+
 	}
 	
 	return self;
 }
-	;
+	
 -(void)nextFrame:(ccTime)dt{
 	roadWay.position = ccp(roadWay.position.x, roadWay.position.y - 5);
-	if (roadWay.position.y < 0) {
-		roadWay.position = ccp(roadWay.position.x ,roadWay.position.y + 480);
+	if (roadWay.position.y < -50) {
+		roadWay.position = ccp(roadWay.position.x ,520);
 	}
 	
 	for(CCSprite *car in enemies){
@@ -88,14 +90,27 @@
 			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			trafficPositionY = random() % 465+5;
 			int px = [self randomlane];
-			//int px2 = [self randomlane2];
-			trafficCar.position = ccp(px, trafficPositionY);
+			int px2 = [self randomlane2];
+			trafficCar.position = ccp(px, px2);
 			[enemies addObject:trafficCar];
+			for(CCSprite *car in enemies){
+				
+				while (CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]))
+				{
+					px = [self randomlane];
+					px2 = [self randomlane2];
+					NSLog(@"x:%i y:%i",px,px2);
+					trafficCar.position = ccp(px, px2);
+				}
+			}
+			
 			[self addChild: trafficCar z:10];
 		}
 		i = i - 60;
 	}
 }
+
+
 
 -(int) randomlane {
 	
@@ -119,15 +134,8 @@
 
 -(int) randomlane2 {
 	int c = (random()%480+1);
-	if (c > 240){
-		trafficPositionY = c + 200;
-	}
-	else if (c<=100){
-		trafficPositionY=c+470;
-	}
-	else if (c<=220 && c>100){
-		trafficPositionY=c+600;
-	}
+	
+		trafficPositionY = c + 480;
 	return trafficPositionY;
 }
 	

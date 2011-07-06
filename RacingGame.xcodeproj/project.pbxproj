@@ -15,6 +15,7 @@
 		3F0CA9E813C4E9D8009FB188 /* Player-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9E413C4E9D8009FB188 /* Player-4.png */; };
 		3F0CA9EC13C4E9FC009FB188 /* Enemy-Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */; };
 		3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */; };
+		3F45B3BC13C4F4C90082D74C /* Highway3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F45B3BB13C4F4C90082D74C /* Highway3 copy.png */; };
 		3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */; };
 		3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */; };
 		3F8E4FE813C4EC6F00CB3A00 /* Cheats.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */; };
@@ -272,6 +273,7 @@
 		3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Enemy-Cars.png"; sourceTree = "<group>"; };
 		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
 		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		3F45B3BB13C4F4C90082D74C /* Highway3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Highway3 copy.png"; path = "/Volumes/InstructorShare/Highway3 copy.png"; sourceTree = "<absolute>"; };
 		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenuLayer.h; sourceTree = "<group>"; };
 		3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainMenuLayer.m; sourceTree = "<group>"; };
@@ -553,12 +555,12 @@
 			isa = PBXGroup;
 			children = (
 				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
+				3F45B3BB13C4F4C90082D74C /* Highway3 copy.png */,
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,
 				506EDAA3102F461B00A389B3 /* cocos2d Sources */,
 				2D500B1D0D5A766B00DBA0E3 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				50F414EB1069373D002A0D5E /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -573,6 +575,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -670,6 +673,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */,
 				3F8E4FE913C4EC8100CB3A00 /* Button.png */,
 				3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */,
@@ -1134,6 +1138,7 @@
 				3F0CA9EC13C4E9FC009FB188 /* Enemy-Cars.png in Resources */,
 				3F8E4FE813C4EC6F00CB3A00 /* Cheats.png in Resources */,
 				3F8E4FEA13C4EC8100CB3A00 /* Button.png in Resources */,
+				3F45B3BC13C4F4C90082D74C /* Highway3 copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
