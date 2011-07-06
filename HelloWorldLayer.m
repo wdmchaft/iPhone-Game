@@ -77,11 +77,12 @@
 		self.isTouchEnabled=YES;
 		}
 		
+		{
 		roadWay=[CCSprite spriteWithFile:@"Roadway.png"];
 		roadWay.position = ccp(160,480);
 		[self addChild:roadWay z:0];
 		[self schedule:@selector(nextFrame:)];
-		
+		}
 	}
 	
 	return self;
@@ -92,6 +93,7 @@
 	if (roadWay.position.y < 0) {
 		//roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
 	}
+	
 }
 
 -(int) randomlane {
@@ -154,7 +156,6 @@
 }
 
 // on "dealloc" you need to release all your retained objects
-
 
 - (void) dealloc{
 	// in case you have something to dealloc, do it in this method
