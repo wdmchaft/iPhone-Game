@@ -23,6 +23,7 @@
 	int carC;
 	int carD;
 	CCSprite *myCar;
+	CCSprite *roadWay;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
