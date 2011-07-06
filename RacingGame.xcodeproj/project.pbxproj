@@ -537,9 +537,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				3F24BBF913C4D1EC00A66D09 /* Highway6789.png */,
 				3F5735AC13C4B963001C19F7 /* HelloWorldLayer.h */,
 				3F24BC1913C4D45B00A66D09 /* Highway2.png */,
+=======
+				3F24BBAB13C4BB1C00A66D09 /* Roadway.png */,
+				3F5735AC13C4B963001C19F7 /* HelloWorldLayer.h */,
+>>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,

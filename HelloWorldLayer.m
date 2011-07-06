@@ -76,14 +76,23 @@
 			[self addChild:myCar z:10];
 		self.isTouchEnabled=YES;
 		}
+<<<<<<< HEAD
 		for (int i = 0; i<10; i++) {
 		roadWay=[CCSprite spriteWithFile:@"Highway2.png"];
 		//fix the center point as the picture is too large (320x5000)
+=======
+		
+		{
+		roadWay=[CCSprite spriteWithFile:@"Roadway.png"];
+>>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
 		roadWay.position = ccp(160,480);
 		[self addChild:roadWay z:0];
 		[self schedule:@selector(nextFrame:)];
 		}
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
 	}
 	
 	return self;
@@ -94,6 +103,7 @@
 	if (roadWay.position.y < 0) {
 		//roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
 	}
+	
 }
 
 -(int) randomlane {
@@ -155,7 +165,6 @@
 }
 
 // on "dealloc" you need to release all your retained objects
-
 
 - (void) dealloc{
 	// in case you have something to dealloc, do it in this method
