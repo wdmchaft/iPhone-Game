@@ -1,13 +1,10 @@
 //
 //  HelloWorldLayer.h
-//  RacingGame
+//  Car Project
 //
-//  Created by pH on 7/5/11.
+//  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
-
-//My Change
-
 
 
 // When you import this file, you import all the cocos2d classes
@@ -16,6 +13,11 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer
 {
+	int carA;
+	int carB;
+	int carC;
+	int carD;
+	CCSprite *myCar;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

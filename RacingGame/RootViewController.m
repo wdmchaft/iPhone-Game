@@ -1,8 +1,8 @@
 //
 //  RootViewController.m
-//  RacingGame
+//  Car Project
 //
-//  Created by pH on 7/5/11.
+//  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
@@ -21,10 +21,10 @@
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-	// Custom initialization
-	}
-	return self;
+ if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+ // Custom initialization
+ }
+ return self;
  }
  */
 
@@ -37,7 +37,7 @@
 /*
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
  - (void)viewDidLoad {
-	[super viewDidLoad];
+ [super viewDidLoad];
  }
  */
 
@@ -45,7 +45,8 @@
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	
-	//
+	return ( interfaceOrientation == UIInterfaceOrientationPortrait);
+	
 	// There are 2 ways to support auto-rotation:
 	//  - The OpenGL / cocos2d way
 	//     - Faster, but doesn't rotate the UIKit objects
@@ -108,8 +109,7 @@
 	// BUG: This won't work if the EAGLView is not fullscreen
 	///
 	CGRect screenRect = [[UIScreen mainScreen] bounds];
-	CGRect rect = CGRectZero;
-
+	CGRect rect;
 	
 	if(toInterfaceOrientation == UIInterfaceOrientationPortrait || toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)		
 		rect = screenRect;

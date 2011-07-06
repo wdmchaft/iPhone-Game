@@ -1,14 +1,15 @@
 //
 //  HelloWorldLayer.m
-//  RacingGame
+//  Car Project
 //
-//  Created by pH on 7/5/11.
+//  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "CCTouchDispatcher.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -34,20 +35,27 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init])) {
-		
-		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"New Change!" fontName:@"Marker Felt" fontSize:64];
-
-		// ask director the the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
-		[self addChild: label];
+		myCar=[CCSprite spriteWithFile:@"myCar.png"];
+		myCar.position = ccp(160,70);
+		[self addChild:myCar];
+		self.isTouchEnabled=YES;
 	}
 	return self;
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+	for (UITouch * touch in touches) {
+		CGPoint location = [self convertTouchToNodeSpace:touch];
+		if (location.x <= 159 && myCar.position.x>100) {
+			
+			myCar.position=ccp(myCar.position.x-58,myCar.position.y);
+		}
+		if (location.x >= 160 && myCar.position.x<220) {
+			myCar.position=ccp(myCar.position.x+58,	
+							   myCar.position.y);		
+		}
+		//[myCar stopAllActions];
+	}
 }
 
 // on "dealloc" you need to release all your retained objects
