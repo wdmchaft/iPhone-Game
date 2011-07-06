@@ -1015,6 +1015,7 @@
 				6FD1151013C3994500F01AFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
