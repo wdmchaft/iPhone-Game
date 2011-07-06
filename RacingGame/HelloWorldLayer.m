@@ -18,8 +18,7 @@
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
 
-+(CCScene *) scene
-{
++(CCScene *) scene{
 	// 'scene' is an autorelease object.
 	CCScene *scene = [CCScene node];
 	
@@ -34,8 +33,7 @@
 }
 
 // on "init" you need to initialize your instance
--(id) init
-{
+-(id) init{
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init])) {
@@ -71,14 +69,31 @@
 			
 		}
 		
+		//creating myCar
+		{
 		myCar=[CCSprite spriteWithFile:@"myCar.png"];
 		myCar.position = ccp(160,70);
-		[self addChild:myCar];
+			[self addChild:myCar z:10];
 		self.isTouchEnabled=YES;
+		}
+		
+		roadWay=[CCSprite spriteWithFile:@"Roadway.png"];
+		roadWay.position = ccp(160,480);
+		[self addChild:roadWay z:0];
+		[self schedule:@selector(nextFrame:)];
+		
 	}
 	
 	return self;
 }
+
+-(void)nextFrame:(ccTime)dt{
+	roadWay.position=ccp(roadWay.position.x,roadWay.position.y-5);
+	if (roadWay.position.y < 0) {
+		//roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
+	}
+}
+
 -(int) randomlane {
 	
 	int m=(random()%5+1);
@@ -141,8 +156,7 @@
 // on "dealloc" you need to release all your retained objects
 
 
-- (void) dealloc
-{
+- (void) dealloc{
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
