@@ -65,7 +65,7 @@
 					//trafficCar.position.y=trafficPositionY+10;
 				}
 			}
-			[self addChild: trafficCar];
+			[self addChild: trafficCar z:10];
 			
 		}
 		
@@ -76,11 +76,13 @@
 			[self addChild:myCar z:10];
 		self.isTouchEnabled=YES;
 		}
-		
-		roadWay=[CCSprite spriteWithFile:@"Roadway.png"];
+		for (int i = 0; i<10; i++) {
+		roadWay=[CCSprite spriteWithFile:@"Highway2.png"];
+		//fix the center point as the picture is too large (320x5000)
 		roadWay.position = ccp(160,480);
 		[self addChild:roadWay z:0];
 		[self schedule:@selector(nextFrame:)];
+		}
 		
 	}
 	
@@ -141,13 +143,12 @@
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	for (UITouch * touch in touches) {
 		CGPoint location = [self convertTouchToNodeSpace:touch];
-		if (location.x <= 159 && myCar.position.x>100) {
+		if (location.x <= 159 && myCar.position.x>50) {
 			
-			myCar.position=ccp(myCar.position.x-58,myCar.position.y);
+			myCar.position=ccp(myCar.position.x-64,myCar.position.y);
 		}
- 		if (location.x >= 160 && myCar.position.x<220) {
-			myCar.position=ccp(myCar.position.x+58,	
-							   myCar.position.y);		
+ 		if (location.x >= 160 && myCar.position.x<270) {
+			myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
 		}
 		//[myCar stopAllActions];
 	}
