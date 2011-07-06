@@ -51,7 +51,6 @@
 		[self addChild: label];
 		enemies=[[NSMutableArray alloc] init];
 		
-		
 		//creating myCar
 		{
 		myCar=[CCSprite spriteWithFile:@"myCar.png"];
@@ -95,9 +94,8 @@
 			[enemies addObject:trafficCar];
 			for(CCSprite *car in enemies){
 				
-				while (CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]))
+				if (CGRectContainsRect([car boundingBox], [trafficCar boundingBox]))
 				{
-					px = [self randomlane];
 					px2 = [self randomlane2];
 					NSLog(@"x:%i y:%i",px,px2);
 					trafficCar.position = ccp(px, px2);
