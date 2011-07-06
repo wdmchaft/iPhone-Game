@@ -25,9 +25,9 @@
 	CCSprite *myCar;
 	NSMutableArray *enemies;
 	CCSprite *roadWay;
+	float i;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
-
 @end

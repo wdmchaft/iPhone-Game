@@ -50,24 +50,7 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		enemies=[[NSMutableArray alloc] init];
-		for (int i = 0; i <= 6; i++) {
-			
-			trafficCar= [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-			trafficPositionY=random()%465+5;
-			int px = [self randomlane];
-			int px2 = [self randomlane2];
-			trafficCar.position=ccp( px,trafficPositionY);
-			[enemies addObject:trafficCar];
-			for(CCSprite *car in enemies){
-			
-				if(CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]))
-				{
-					//trafficCar.position.y=trafficPositionY+10;
-				}
-			}
-			[self addChild: trafficCar z:10];
-			
-		}
+		
 		
 		//creating myCar
 		{
@@ -76,34 +59,42 @@
 			[self addChild:myCar z:10];
 		self.isTouchEnabled=YES;
 		}
-<<<<<<< HEAD
-		for (int i = 0; i<10; i++) {
+		
 		roadWay=[CCSprite spriteWithFile:@"Highway2.png"];
 		//fix the center point as the picture is too large (320x5000)
-=======
 		
-		{
-		roadWay=[CCSprite spriteWithFile:@"Roadway.png"];
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
+		
 		roadWay.position = ccp(160,480);
 		[self addChild:roadWay z:0];
 		[self schedule:@selector(nextFrame:)];
-		}
-<<<<<<< HEAD
-		
-=======
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
 	}
 	
 	return self;
 }
-
+	;
 -(void)nextFrame:(ccTime)dt{
 	roadWay.position=ccp(roadWay.position.x,roadWay.position.y-5);
 	if (roadWay.position.y < 0) {
-		//roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
+		roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
 	}
 	
+	for(CCSprite *car in enemies){
+			car.position=ccp(car.position.x,car.position.y-3);
+	}
+	
+	i = i++;
+	while ( i >= 30) {
+		for (int j = 1; j<=2; j++) {
+			trafficCar= [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+			trafficPositionY=random()%465+5;
+			int px = [self randomlane];
+			int px2 = [self randomlane2];
+			trafficCar.position=ccp( px,trafficPositionY);
+			[enemies addObject:trafficCar];
+			[self addChild: trafficCar z:10];
+		}
+		i=i-60;
+	}
 }
 
 -(int) randomlane {
@@ -139,13 +130,13 @@
 -(int) randomlane2 {
 	int c=(random()%480+1);
 	if (c>240){
-		trafficPositionY=c;
+		trafficPositionY=c+200;
 	}
 	else if (c<=100){
-		trafficPositionY=c+170;
+		trafficPositionY=c+470;
 	}
 	else if (c<=220 && c>100){
-		trafficPositionY=c+100;
+		trafficPositionY=c+600;
 	}
 	return trafficPositionY;
 }

@@ -3,41 +3,17 @@
 	1D6058900D05DD3D006BFB54 /* RacingGame */ = {
 		activeExec = 0;
 		executables = (
-			3F3ABE2B13C4D33F003A8D20 /* RacingGame */,
+			3F3ABF1913C4E682003A8D20 /* RacingGame */,
 		);
-	};
-	1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */ = {
-		uiCtxt = {
-<<<<<<< HEAD
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2054}}";
-			sepNavSelRange = "{2905, 0}";
-			sepNavVisRange = "{1242, 1736}";
-=======
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2158}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{3511, 1120}";
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
-		};
-	};
-	1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */ = {
-		uiCtxt = {
-<<<<<<< HEAD
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 626}}";
-			sepNavSelRange = "{205, 0}";
-=======
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 621}}";
-			sepNavSelRange = "{0, 0}";
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
-			sepNavVisRange = "{0, 369}";
-		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 3F3ABE2B13C4D33F003A8D20 /* RacingGame */;
+		activeExecutable = 3F3ABF1913C4E682003A8D20 /* RacingGame */;
+		activeSDKPreference = iphonesimulator4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* RacingGame */;
-		codeSenseManager = 3F3ABE3013C4D35E003A8D20 /* Code sense */;
+		codeSenseManager = 3F3ABF2C13C4E689003A8D20 /* Code sense */;
 		executables = (
-			3F3ABE2B13C4D33F003A8D20 /* RacingGame */,
+			3F3ABF1913C4E682003A8D20 /* RacingGame */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -62,25 +38,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331666239;
-			PBXWorkspaceStateSaveDate = 331666239;
+			PBXPerProjectTemplateStateSaveDate = 331671170;
+			PBXWorkspaceStateSaveDate = 331671170;
 		};
-		perUserProjectItems = {
-			3F3ABE3313C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3313C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3413C4D447003A8D20 /* PBXBookmark */ = 3F3ABE3413C4D447003A8D20 /* PBXBookmark */;
-			3F3ABE3513C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3513C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3613C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3613C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3713C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3713C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3813C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3813C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3913C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3913C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3A13C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3A13C4D447003A8D20 /* PBXTextBookmark */;
-			3F3ABE3B13C4D447003A8D20 /* PBXTextBookmark */ = 3F3ABE3B13C4D447003A8D20 /* PBXTextBookmark */;
-		};
-		sourceControlManager = 3F3ABE2F13C4D35E003A8D20 /* Source Control */;
+		sourceControlManager = 3F3ABF2B13C4E689003A8D20 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
-	3F3ABE2B13C4D33F003A8D20 /* RacingGame */ = {
+	3F3ABF1913C4E682003A8D20 /* RacingGame */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -108,7 +73,7 @@
 		sourceDirectories = (
 		);
 	};
-	3F3ABE2F13C4D35E003A8D20 /* Source Control */ = {
+	3F3ABF2B13C4E689003A8D20 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -118,149 +83,11 @@
 			};
 		};
 	};
-	3F3ABE3013C4D35E003A8D20 /* Code sense */ = {
+	3F3ABF2C13C4E689003A8D20 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	3F3ABE3313C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 504DFC6810AF1739006D82FE /* LICENSE.cocos2d */;
-		name = "LICENSE.cocos2d: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1179;
-		vrLoc = 0;
-	};
-	3F3ABE3413C4D447003A8D20 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 3F24BBAB13C4BB1C00A66D09 /* Roadway.png */;
-	};
-	3F3ABE3513C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */;
-		name = "RacingGameAppDelegate.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 369;
-		vrLoc = 0;
-	};
-	3F3ABE3613C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */;
-		name = "RacingGameAppDelegate.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1120;
-		vrLoc = 3511;
-	};
-	3F3ABE3713C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E0F80F5E120A0182005866B8 /* RootViewController.h */;
-		name = "RootViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 240;
-		vrLoc = 0;
-	};
-	3F3ABE3813C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = E0F80F5F120A0182005866B8 /* RootViewController.m */;
-		name = "RootViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1586;
-		vrLoc = 2870;
-	};
-	3F3ABE3913C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F5735AC13C4B963001C19F7 /* HelloWorldLayer.h */;
-		name = "HelloWorldLayer.h: 26";
-		rLen = 14;
-		rLoc = 455;
-		rType = 0;
-		vrLen = 602;
-		vrLoc = 0;
-	};
-	3F3ABE3A13C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
-		name = "HelloWorldLayer.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1213;
-		vrLoc = 0;
-	};
-	3F3ABE3B13C4D447003A8D20 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
-		name = "HelloWorldLayer.m: 63";
-		rLen = 0;
-		rLoc = 1680;
-		rType = 0;
-		vrLen = 1797;
-		vrLoc = 391;
-	};
-	3F5735AC13C4B963001C19F7 /* HelloWorldLayer.h */ = {
-		uiCtxt = {
-<<<<<<< HEAD
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 626}}";
-			sepNavSelRange = "{486, 0}";
-=======
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 621}}";
-			sepNavSelRange = "{455, 14}";
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
-			sepNavVisRange = "{0, 602}";
-		};
-	};
-	3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {
-		uiCtxt = {
-<<<<<<< HEAD
-			sepNavIntBoundsRect = "{{0, 0}, {633, 2158}}";
-			sepNavSelRange = "{2184, 0}";
-			sepNavVisRange = "{1836, 424}";
-=======
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{411, 263}\";\n            s = 0;\n        },\n                {\n            r = \"{1853, 141}\";\n            s = 0;\n        },\n                {\n            r = \"{2002, 162}\";\n            s = 0;\n        },\n                {\n            r = \"{2975, 378}\";\n            s = 0;\n        },\n                {\n            r = \"{3436, 251}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3694}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 1417}}";
-			sepNavSelRange = "{1418, 0}";
-			sepNavVisRange = "{391, 1234}";
-		};
-	};
-	504DFC6810AF1739006D82FE /* LICENSE.cocos2d */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 621}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1179}";
->>>>>>> 93423f81b1118e653132efcf92cf9cce5e6e7c35
-		};
-	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
 		activeExec = 0;
-	};
-	E0F80F5E120A0182005866B8 /* RootViewController.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 621}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 240}";
-		};
-	};
-	E0F80F5F120A0182005866B8 /* RootViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1963}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2870, 1586}";
-		};
-	};
-	E0F80F5F120A0182005866B8 /* RootViewController.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1146, 1950}}";
-			sepNavSelRange = "{1267, 0}";
-			sepNavVisRange = "{340, 1511}";
-		};
 	};
 }
