@@ -17,7 +17,7 @@
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
 
-@implementation AppDelegate
+@implementation RacingGameAppDelegate
 
 @synthesize window;
 
@@ -92,7 +92,8 @@
 #else
 	[director setDeviceOrientation:kCCDeviceOrientationLandscapeLeft];
 #endif
-	
+	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
+
 	[director setAnimationInterval:1.0/60];
 	[director setDisplayFPS:YES];
 	
