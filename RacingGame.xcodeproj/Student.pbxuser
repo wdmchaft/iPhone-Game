@@ -24,7 +24,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					833,
+					725,
 					20,
 					48,
 					43,
@@ -41,19 +41,30 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331671452;
-			PBXWorkspaceStateSaveDate = 331671452;
+			PBXPerProjectTemplateStateSaveDate = 331671955;
+			PBXWorkspaceStateSaveDate = 331671955;
 		};
 		perUserProjectItems = {
-			3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */ = 3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */;
-			3F24BCC213C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC213C4E7F700A66D09 /* PBXBookmark */;
-			3F24BCC313C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC313C4E7F700A66D09 /* PBXBookmark */;
-			3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */ = 3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */;
-			3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */ = 3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */;
+			3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */ = 3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */;
+			3F24BCC113C4E7F700A66D09 = 3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */;
+			3F24BCC213C4E7F700A66D09 = 3F24BCC213C4E7F700A66D09 /* PBXBookmark */;
+			3F24BCC313C4E7F700A66D09 = 3F24BCC313C4E7F700A66D09 /* PBXBookmark */;
+			3F24BCC413C4E7F700A66D09 = 3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */;
+			3F24BCC713C4E91B00A66D09 = 3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3F3ABF2B13C4E689003A8D20 /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	3F0CA9D313C4E9A6009FB188 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 102";
+		rLen = 0;
+		rLoc = 2460;
+		rType = 0;
+		vrLen = 1066;
+		vrLoc = 1755;
 	};
 	3F24BCC113C4E7F700A66D09 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -144,9 +155,9 @@
 	};
 	3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2171}}";
-			sepNavSelRange = "{2820, 0}";
-			sepNavVisRange = "{1618, 1229}";
+			sepNavIntBoundsRect = "{{0, 0}, {903, 2093}}";
+			sepNavSelRange = "{2460, 0}";
+			sepNavVisRange = "{1755, 1066}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {

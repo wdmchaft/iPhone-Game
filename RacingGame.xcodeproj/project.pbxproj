@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* RacingGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */; };
+		3F0CA9E513C4E9D8009FB188 /* myCar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9E113C4E9D8009FB188 /* myCar.png */; };
+		3F0CA9E613C4E9D8009FB188 /* Player-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9E213C4E9D8009FB188 /* Player-2.png */; };
+		3F0CA9E713C4E9D8009FB188 /* Player-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9E313C4E9D8009FB188 /* Player-3.png */; };
+		3F0CA9E813C4E9D8009FB188 /* Player-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9E413C4E9D8009FB188 /* Player-4.png */; };
+		3F0CA9EC13C4E9FC009FB188 /* Enemy-Cars.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */; };
 		3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */; };
 		3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
@@ -257,6 +262,11 @@
 		1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RacingGameAppDelegate.h; path = Classes/RacingGameAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		1F3B9A820EF2151B00286867 /* RacingGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacingGame_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F0CA9E113C4E9D8009FB188 /* myCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myCar.png; sourceTree = "<group>"; };
+		3F0CA9E213C4E9D8009FB188 /* Player-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player-2.png"; sourceTree = "<group>"; };
+		3F0CA9E313C4E9D8009FB188 /* Player-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player-3.png"; sourceTree = "<group>"; };
+		3F0CA9E413C4E9D8009FB188 /* Player-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player-4.png"; sourceTree = "<group>"; };
+		3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Enemy-Cars.png"; sourceTree = "<group>"; };
 		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
 		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
@@ -651,6 +661,11 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */,
+				3F0CA9E113C4E9D8009FB188 /* myCar.png */,
+				3F0CA9E213C4E9D8009FB188 /* Player-2.png */,
+				3F0CA9E313C4E9D8009FB188 /* Player-3.png */,
+				3F0CA9E413C4E9D8009FB188 /* Player-4.png */,
 				3F24BCBD13C4E7E200A66D09 /* Highway3.png */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
 				E02BB4FE126CA50F006E46A2 /* Icon@2x.png */,
@@ -1101,6 +1116,11 @@
 				E02BB508126CA50F006E46A2 /* Icon-72.png in Resources */,
 				E02BB763126CC1E0006E46A2 /* iTunesArtwork in Resources */,
 				3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */,
+				3F0CA9E513C4E9D8009FB188 /* myCar.png in Resources */,
+				3F0CA9E613C4E9D8009FB188 /* Player-2.png in Resources */,
+				3F0CA9E713C4E9D8009FB188 /* Player-3.png in Resources */,
+				3F0CA9E813C4E9D8009FB188 /* Player-4.png in Resources */,
+				3F0CA9EC13C4E9FC009FB188 /* Enemy-Cars.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
