@@ -7,7 +7,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -16,6 +16,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -23,9 +24,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = RacingGame;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	3F0FE1CC13C4A8380063EB3E /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -45,11 +50,58 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3F0FE1C613C4A8180063EB3E /* RacingGame */;
 		activeTarget = 6FD1139B13C3994400F01AFF /* RacingGame */;
+		addToTargets = (
+			6FD1139B13C3994400F01AFF /* RacingGame */,
+		);
 		codeSenseManager = 3F0FE1CD13C4A8380063EB3E /* Code sense */;
 		executables = (
 			3F0FE1C613C4A8180063EB3E /* RacingGame */,
 		);
 		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					618,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					578,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
 			PBXPerProjectTemplateStateSaveDate = 331655192;
 			PBXWorkspaceStateSaveDate = 331655192;
 		};
@@ -62,5 +114,26 @@
 		executables = (
 			3F0FE1C613C4A8180063EB3E /* RacingGame */,
 		);
+	};
+	6FD1142113C3994400F01AFF /* CCNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {724, 11778}}";
+			sepNavSelRange = "{10061, 0}";
+			sepNavVisRange = "{9874, 397}";
+		};
+	};
+	6FD1150813C3994500F01AFF /* HelloWorldLayer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {796, 612}}";
+			sepNavSelRange = "{37, 0}";
+			sepNavVisRange = "{0, 556}";
+		};
+	};
+	6FD1150913C3994500F01AFF /* HelloWorldLayer.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {740, 1664}}";
+			sepNavSelRange = "{1622, 0}";
+			sepNavVisRange = "{1462, 278}";
+		};
 	};
 }
