@@ -51,13 +51,22 @@
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
-		
-		for (int i = 0; i < 50; i++) {
+		enemies=[[NSMutableArray alloc] init];
+		for (int i = 0; i <= 6; i++) {
 			
-			trafficCar= [CCSprite spriteWithFile:@"Icon.png"];
+			trafficCar= [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			trafficPositionY=random()%465+5;
 			int px = [self randomlane];
+			int px2 = [self randomlane2];
 			trafficCar.position=ccp( px,trafficPositionY);
+			[enemies addObject:trafficCar];
+			for(CCSprite *car in enemies){
+			
+				if(CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]))
+				{
+					//trafficCar.position.y=trafficPositionY+10;
+				}
+			}
 			[self addChild: trafficCar];
 			
 		}
@@ -75,23 +84,23 @@
 	int m=(random()%5+1);
 	if (m==1)
 	{
-		trafficPositionX=(random()%58+1);
+		trafficPositionX=32;
 	}	
 	else if (m==2)
 	{
-		trafficPositionX=(random()%58+65);
+		trafficPositionX=96;
 	}	
 	else if (m==3)
 	{
-		trafficPositionX=(random()%58+130);
+		trafficPositionX=160;
 	}	
 	else if (m==4)
 	{
-		trafficPositionX=(random()%58+195);
+		trafficPositionX=224;
 	}	
 	else
 	{
-		trafficPositionX=(random()%58+260);
+		trafficPositionX=288;
 	}
 	
 	
@@ -100,6 +109,20 @@
 	
 }	
 
+-(int) randomlane2 {
+	int c=(random()%480+1);
+	if (c>240){
+		trafficPositionY=c;
+	}
+	else if (c<=100){
+		trafficPositionY=c+170;
+	}
+	else if (c<=220 && c>100){
+		trafficPositionY=c+100;
+	}
+	return trafficPositionY;
+}
+	
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	for (UITouch * touch in touches) {
 		CGPoint location = [self convertTouchToNodeSpace:touch];
@@ -107,7 +130,7 @@
 			
 			myCar.position=ccp(myCar.position.x-58,myCar.position.y);
 		}
-		if (location.x >= 160 && myCar.position.x<220) {
+ 		if (location.x >= 160 && myCar.position.x<220) {
 			myCar.position=ccp(myCar.position.x+58,	
 							   myCar.position.y);		
 		}

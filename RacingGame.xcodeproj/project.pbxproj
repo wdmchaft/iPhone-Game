@@ -14,6 +14,7 @@
 		3F0FE1FB13C4A9330063EB3E /* Road-v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FE1F513C4A9330063EB3E /* Road-v2.png */; };
 		3F0FE1FC13C4A9330063EB3E /* the-Friendly-car-that-could.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FE1F613C4A9330063EB3E /* the-Friendly-car-that-could.png */; };
 		3F0FE20313C4A9530063EB3E /* myCar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FE20213C4A9530063EB3E /* myCar.png */; };
+		3F0FE25D13C4ADE10063EB3E /* Player-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0FE25C13C4ADE10063EB3E /* Player-4.png */; };
 		6FD113A113C3994400F01AFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD113A013C3994400F01AFF /* QuartzCore.framework */; };
 		6FD113A313C3994400F01AFF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD113A213C3994400F01AFF /* OpenGLES.framework */; };
 		6FD113A513C3994400F01AFF /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD113A413C3994400F01AFF /* OpenAL.framework */; };
@@ -139,6 +140,7 @@
 		3F0FE1F513C4A9330063EB3E /* Road-v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Road-v2.png"; sourceTree = "<group>"; };
 		3F0FE1F613C4A9330063EB3E /* the-Friendly-car-that-could.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "the-Friendly-car-that-could.png"; sourceTree = "<group>"; };
 		3F0FE20213C4A9530063EB3E /* myCar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myCar.png; sourceTree = "<group>"; };
+		3F0FE25C13C4ADE10063EB3E /* Player-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Player-4.png"; sourceTree = "<group>"; };
 		6FD1139C13C3994400F01AFF /* RacingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD113A013C3994400F01AFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6FD113A213C3994400F01AFF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -443,6 +445,7 @@
 				6FD1150613C3994500F01AFF /* RootViewController.m */,
 				6FD1150813C3994500F01AFF /* HelloWorldLayer.h */,
 				6FD1150913C3994500F01AFF /* HelloWorldLayer.m */,
+				3F0FE25C13C4ADE10063EB3E /* Player-4.png */,
 				6FD1150B13C3994500F01AFF /* GameConfig.h */,
 				6FD113B113C3994400F01AFF /* Resources */,
 				6FD113C513C3994400F01AFF /* libs */,
@@ -842,6 +845,7 @@
 				3F0FE1FB13C4A9330063EB3E /* Road-v2.png in Resources */,
 				3F0FE1FC13C4A9330063EB3E /* the-Friendly-car-that-could.png in Resources */,
 				3F0FE20313C4A9530063EB3E /* myCar.png in Resources */,
+				3F0FE25D13C4ADE10063EB3E /* Player-4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

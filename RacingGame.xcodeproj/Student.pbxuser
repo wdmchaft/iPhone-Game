@@ -7,7 +7,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -46,6 +46,66 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	3F0FE24013C4AD1C0063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150613C3994500F01AFF /* RootViewController.m */;
+		name = "RootViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1269;
+		vrLoc = 0;
+	};
+	3F0FE24913C4AD540063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150313C3994500F01AFF /* AppDelegate.m */;
+		name = "AppDelegate.m: 24";
+		rLen = 0;
+		rLoc = 382;
+		rType = 0;
+		vrLen = 1704;
+		vrLoc = 1024;
+	};
+	3F0FE29F13C4B5C40063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1144313C3994400F01AFF /* CCSprite.m */;
+		name = "CCSprite.m: 66";
+		rLen = 25;
+		rLoc = 2125;
+		rType = 0;
+		vrLen = 1107;
+		vrLoc = 1216;
+	};
+	3F0FE2A013C4B5C40063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
+		name = "HelloWorldLayer.h: 25";
+		rLen = 8;
+		rLoc = 437;
+		rType = 0;
+		vrLen = 582;
+		vrLoc = 0;
+	};
+	3F0FE2A113C4B5C40063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150913C3994500F01AFF /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 63";
+		rLen = 0;
+		rLoc = 1648;
+		rType = 0;
+		vrLen = 1286;
+		vrLoc = 678;
+	};
+	3F0FE2C213C4B7BE0063EB3E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150913C3994500F01AFF /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 67";
+		rLen = 0;
+		rLoc = 1736;
+		rType = 0;
+		vrLen = 1325;
+		vrLoc = 324;
+	};
 	6FD1139313C3994400F01AFF /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3F0FE1C613C4A8180063EB3E /* RacingGame */;
@@ -65,7 +125,7 @@
 					20,
 					618,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -105,6 +165,14 @@
 			PBXPerProjectTemplateStateSaveDate = 331655192;
 			PBXWorkspaceStateSaveDate = 331655192;
 		};
+		perUserProjectItems = {
+			3F0FE24013C4AD1C0063EB3E /* PBXTextBookmark */ = 3F0FE24013C4AD1C0063EB3E /* PBXTextBookmark */;
+			3F0FE24913C4AD540063EB3E /* PBXTextBookmark */ = 3F0FE24913C4AD540063EB3E /* PBXTextBookmark */;
+			3F0FE29F13C4B5C40063EB3E /* PBXTextBookmark */ = 3F0FE29F13C4B5C40063EB3E /* PBXTextBookmark */;
+			3F0FE2A013C4B5C40063EB3E /* PBXTextBookmark */ = 3F0FE2A013C4B5C40063EB3E /* PBXTextBookmark */;
+			3F0FE2A113C4B5C40063EB3E /* PBXTextBookmark */ = 3F0FE2A113C4B5C40063EB3E /* PBXTextBookmark */;
+			3F0FE2C213C4B7BE0063EB3E /* PBXTextBookmark */ = 3F0FE2C213C4B7BE0063EB3E /* PBXTextBookmark */;
+		};
 		sourceControlManager = 3F0FE1CC13C4A8380063EB3E /* Source Control */;
 		userBuildSettings = {
 		};
@@ -122,18 +190,39 @@
 			sepNavVisRange = "{9874, 397}";
 		};
 	};
+	6FD1144313C3994400F01AFF /* CCSprite.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {943, 12922}}";
+			sepNavSelRange = "{2125, 25}";
+			sepNavVisRange = "{1216, 1107}";
+		};
+	};
+	6FD1150313C3994500F01AFF /* AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {796, 2067}}";
+			sepNavSelRange = "{382, 0}";
+			sepNavVisRange = "{1024, 1704}";
+		};
+	};
+	6FD1150613C3994500F01AFF /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1146, 2093}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1269}";
+		};
+	};
 	6FD1150813C3994500F01AFF /* HelloWorldLayer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {796, 612}}";
-			sepNavSelRange = "{37, 0}";
-			sepNavVisRange = "{0, 556}";
+			sepNavIntBoundsRect = "{{0, 0}, {796, 610}}";
+			sepNavSelRange = "{437, 8}";
+			sepNavVisRange = "{0, 582}";
 		};
 	};
 	6FD1150913C3994500F01AFF /* HelloWorldLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {740, 1664}}";
-			sepNavSelRange = "{1622, 0}";
-			sepNavVisRange = "{1462, 278}";
+			sepNavIntBoundsRect = "{{0, 0}, {740, 1846}}";
+			sepNavSelRange = "{1913, 0}";
+			sepNavVisRange = "{924, 352}";
 		};
 	};
 }
