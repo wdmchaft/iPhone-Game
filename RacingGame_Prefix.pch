@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'RacingGame' target in the 'RacingGame' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif

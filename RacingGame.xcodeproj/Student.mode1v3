@@ -178,7 +178,11 @@
 	<key>FavBarConfig</key>
 	<dict>
 		<key>PBXProjectModuleGUID</key>
+<<<<<<< HEAD
 		<string>3F7A201B13C4A09A001E57B6</string>
+=======
+		<string>3F5735A113C4B937001C19F7</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 		<key>XCBarModuleItemNames</key>
 		<dict/>
 		<key>XCBarModuleItems</key>
@@ -263,14 +267,21 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
+<<<<<<< HEAD
 								<string>6FD1139113C3994400F01AFF</string>
 								<string>6FD113B013C3994400F01AFF</string>
+=======
+								<string>29B97314FDCFA39411CA2CEA</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+<<<<<<< HEAD
 									<integer>3</integer>
+=======
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -295,7 +306,11 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 						<string>246 396 788 504 0 0 1280 1002 </string>
+=======
+						<string>246 398 788 504 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,7 +328,11 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
+<<<<<<< HEAD
 								<string>AppDelegate.m</string>
+=======
+								<string>MyNewFile14.java</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,6 +340,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
+<<<<<<< HEAD
 										<string>AppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
@@ -332,6 +352,9 @@
 											<string>3F7A201613C4A09A001E57B6</string>
 											<string>3F7A201713C4A09A001E57B6</string>
 										</array>
+=======
+										<string>MyNewFile14.java</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -342,14 +365,24 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
+<<<<<<< HEAD
 								<string>{{0, 0}, {580, 277}}</string>
 								<key>RubberWindowFrame</key>
 								<string>246 396 788 504 0 0 1280 1002 </string>
+=======
+								<string>{{0, 0}, {580, 260}}</string>
+								<key>RubberWindowFrame</key>
+								<string>246 398 788 504 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
+<<<<<<< HEAD
 							<string>277pt</string>
+=======
+							<string>260pt</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -362,14 +395,24 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
+<<<<<<< HEAD
 								<string>{{0, 282}, {580, 181}}</string>
 								<key>RubberWindowFrame</key>
 								<string>246 396 788 504 0 0 1280 1002 </string>
+=======
+								<string>{{0, 265}, {580, 198}}</string>
+								<key>RubberWindowFrame</key>
+								<string>246 398 788 504 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
+<<<<<<< HEAD
 							<string>181pt</string>
+=======
+							<string>198pt</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -388,9 +431,15 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
+<<<<<<< HEAD
 				<string>3F7A201913C4A09A001E57B6</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>3F7A201A13C4A09A001E57B6</string>
+=======
+				<string>3F24BB9813C4BA8500A66D09</string>
+				<string>1CE0B1FE06471DED0097A5F4</string>
+				<string>3F24BB9913C4BA8500A66D09</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -528,11 +577,19 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+<<<<<<< HEAD
 		<string>3F7A201C13C4A09A001E57B6</string>
 		<string>/Users/Student/Documents/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>246 396 788 504 0 0 1280 1002 </string>
+=======
+		<string>3F5735A213C4B937001C19F7</string>
+		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
+	</array>
+	<key>WindowString</key>
+	<string>246 398 788 504 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -562,7 +619,11 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 								<string>267 377 500 500 0 0 1280 1002 </string>
+=======
+								<string>267 379 500 500 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -586,7 +647,11 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
+<<<<<<< HEAD
 								<string>267 377 500 500 0 0 1280 1002 </string>
+=======
+								<string>267 379 500 500 0 0 1280 1002 </string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -608,8 +673,13 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
+<<<<<<< HEAD
 				<string>3F7A201C13C4A09A001E57B6</string>
 				<string>3F7A201D13C4A09A001E57B6</string>
+=======
+				<string>3F5735A213C4B937001C19F7</string>
+				<string>3F24BB9A13C4BA8500A66D09</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -618,9 +688,15 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
+<<<<<<< HEAD
 			<string>267 377 500 500 0 0 1280 1002 </string>
 			<key>WindowToolGUID</key>
 			<string>3F7A201C13C4A09A001E57B6</string>
+=======
+			<string>267 379 500 500 0 0 1280 1002 </string>
+			<key>WindowToolGUID</key>
+			<string>3F5735A213C4B937001C19F7</string>
+>>>>>>> 37ca1ad17d6a79a55afa0d617ccbdee6ef87e82e
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

@@ -46,6 +46,7 @@
 }
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
+	srandom(time(NULL));
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
