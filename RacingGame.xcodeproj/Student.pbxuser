@@ -1,5 +1,6 @@
 // !$*UTF8*$!
 {
+<<<<<<< HEAD
 	3F52FD1E13C49BD8009B9621 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
@@ -41,6 +42,9 @@
 		vrLoc = 0;
 	};
 	3FF8BC5A13C3A4780057A01F /* RacingGame */ = {
+=======
+	3FF2157F13C499E400E931E0 /* RacingGame */ = {
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -67,7 +71,11 @@
 		sourceDirectories = (
 		);
 	};
+<<<<<<< HEAD
 	3FF8BC6B13C3A4880057A01F /* Source Control */ = {
+=======
+	3FF2159813C499E900E931E0 /* Source Control */ = {
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -77,17 +85,29 @@
 			};
 		};
 	};
+<<<<<<< HEAD
 	3FF8BC6C13C3A4880057A01F /* Code sense */ = {
+=======
+	3FF2159913C499E900E931E0 /* Code sense */ = {
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
 	6FD1139313C3994400F01AFF /* Project object */ = {
 		activeBuildConfigurationName = Debug;
+<<<<<<< HEAD
 		activeExecutable = 3FF8BC5A13C3A4780057A01F /* RacingGame */;
 		activeTarget = 6FD1139B13C3994400F01AFF /* RacingGame */;
 		codeSenseManager = 3FF8BC6C13C3A4880057A01F /* Code sense */;
 		executables = (
 			3FF8BC5A13C3A4780057A01F /* RacingGame */,
+=======
+		activeExecutable = 3FF2157F13C499E400E931E0 /* RacingGame */;
+		activeTarget = 6FD1139B13C3994400F01AFF /* RacingGame */;
+		codeSenseManager = 3FF2159913C499E900E931E0 /* Code sense */;
+		executables = (
+			3FF2157F13C499E400E931E0 /* RacingGame */,
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -97,7 +117,11 @@
 					20,
 					341,
 					20,
+<<<<<<< HEAD
 					48,
+=======
+					48.16259765625,
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 					43,
 					43,
 					20,
@@ -112,6 +136,7 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+<<<<<<< HEAD
 			PBXPerProjectTemplateStateSaveDate = 331652044;
 			PBXWorkspaceStateSaveDate = 331652044;
 		};
@@ -122,12 +147,19 @@
 			3F52FD2513C49BFE009B9621 /* PBXTextBookmark */ = 3F52FD2513C49BFE009B9621 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3FF8BC6B13C3A4880057A01F /* Source Control */;
+=======
+			PBXPerProjectTemplateStateSaveDate = 331651556;
+			PBXWorkspaceStateSaveDate = 331651556;
+		};
+		sourceControlManager = 3FF2159813C499E900E931E0 /* Source Control */;
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 		userBuildSettings = {
 		};
 	};
 	6FD1139B13C3994400F01AFF /* RacingGame */ = {
 		activeExec = 0;
 		executables = (
+<<<<<<< HEAD
 			3FF8BC5A13C3A4780057A01F /* RacingGame */,
 		);
 	};
@@ -152,4 +184,9 @@
 			sepNavVisRange = "{0, 296}";
 		};
 	};
+=======
+			3FF2157F13C499E400E931E0 /* RacingGame */,
+		);
+	};
+>>>>>>> 8c65750c5c1c2bb8ec09713a39c253a5d1c6e3e6
 }
