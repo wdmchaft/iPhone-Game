@@ -1,5 +1,45 @@
 // !$*UTF8*$!
 {
+	3F52FD1E13C49BD8009B9621 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
+		name = "HelloWorldLayer.h: 10";
+		rLen = 0;
+		rLoc = 147;
+		rType = 0;
+		vrLen = 296;
+		vrLoc = 0;
+	};
+	3F52FD1F13C49BD8009B9621 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150213C3994500F01AFF /* AppDelegate.h */;
+		name = "AppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 354;
+		vrLoc = 0;
+	};
+	3F52FD2013C49BD8009B9621 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150313C3994500F01AFF /* AppDelegate.m */;
+		name = "AppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 309;
+		vrLoc = 0;
+	};
+	3F52FD2513C49BFE009B9621 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6FD1150313C3994500F01AFF /* AppDelegate.m */;
+		name = "AppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 309;
+		vrLoc = 0;
+	};
 	3FF8BC5A13C3A4780057A01F /* RacingGame */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -26,20 +66,6 @@
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
-	};
-	3FF8BC6413C3A4880057A01F /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
-	};
-	3FF8BC6513C3A4880057A01F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 6FD1150813C3994500F01AFF /* HelloWorldLayer.h */;
-		name = "HelloWorldLayer.h: 10";
-		rLen = 0;
-		rLoc = 147;
-		rType = 0;
-		vrLen = 296;
-		vrLoc = 0;
 	};
 	3FF8BC6B13C3A4880057A01F /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -71,7 +97,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -86,12 +112,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 331588728;
-			PBXWorkspaceStateSaveDate = 331588728;
+			PBXPerProjectTemplateStateSaveDate = 331652044;
+			PBXWorkspaceStateSaveDate = 331652044;
 		};
 		perUserProjectItems = {
-			3FF8BC6413C3A4880057A01F /* PBXBookmark */ = 3FF8BC6413C3A4880057A01F /* PBXBookmark */;
-			3FF8BC6513C3A4880057A01F /* PBXTextBookmark */ = 3FF8BC6513C3A4880057A01F /* PBXTextBookmark */;
+			3F52FD1E13C49BD8009B9621 /* PBXTextBookmark */ = 3F52FD1E13C49BD8009B9621 /* PBXTextBookmark */;
+			3F52FD1F13C49BD8009B9621 /* PBXTextBookmark */ = 3F52FD1F13C49BD8009B9621 /* PBXTextBookmark */;
+			3F52FD2013C49BD8009B9621 /* PBXTextBookmark */ = 3F52FD2013C49BD8009B9621 /* PBXTextBookmark */;
+			3F52FD2513C49BFE009B9621 /* PBXTextBookmark */ = 3F52FD2513C49BFE009B9621 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3FF8BC6B13C3A4880057A01F /* Source Control */;
 		userBuildSettings = {
@@ -102,6 +130,20 @@
 		executables = (
 			3FF8BC5A13C3A4780057A01F /* RacingGame */,
 		);
+	};
+	6FD1150213C3994500F01AFF /* AppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 273}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 354}";
+		};
+	};
+	6FD1150313C3994500F01AFF /* AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {705, 2067}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 309}";
+		};
 	};
 	6FD1150813C3994500F01AFF /* HelloWorldLayer.h */ = {
 		uiCtxt = {
