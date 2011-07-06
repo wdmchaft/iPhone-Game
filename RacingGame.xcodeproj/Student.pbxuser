@@ -49,6 +49,7 @@
 			3F24BCC213C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC213C4E7F700A66D09 /* PBXBookmark */;
 			3F24BCC313C4E7F700A66D09 /* PBXBookmark */ = 3F24BCC313C4E7F700A66D09 /* PBXBookmark */;
 			3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */ = 3F24BCC413C4E7F700A66D09 /* PBXTextBookmark */;
+			3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */ = 3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 3F3ABF2B13C4E689003A8D20 /* Source Control */;
 		userBuildSettings = {
@@ -81,6 +82,16 @@
 		rType = 0;
 		vrLen = 1210;
 		vrLoc = 574;
+	};
+	3F24BCC713C4E91B00A66D09 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */;
+		name = "HelloWorldLayer.m: 125";
+		rLen = 0;
+		rLoc = 2820;
+		rType = 0;
+		vrLen = 1229;
+		vrLoc = 1618;
 	};
 	3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {
 		uiCtxt = {
@@ -133,9 +144,9 @@
 	};
 	3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 2080}}";
-			sepNavSelRange = "{1546, 0}";
-			sepNavVisRange = "{574, 1210}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2171}}";
+			sepNavSelRange = "{2820, 0}";
+			sepNavVisRange = "{1618, 1229}";
 		};
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {

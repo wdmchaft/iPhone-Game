@@ -73,64 +73,54 @@
 }
 	;
 -(void)nextFrame:(ccTime)dt{
-	roadWay.position=ccp(roadWay.position.x,roadWay.position.y-5);
+	roadWay.position = ccp(roadWay.position.x, roadWay.position.y - 5);
 	if (roadWay.position.y < 0) {
-		roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
+		roadWay.position = ccp(roadWay.position.x ,roadWay.position.y + 480);
 	}
 	
 	for(CCSprite *car in enemies){
-			car.position=ccp(car.position.x,car.position.y-3);
+		car.position = ccp(car.position.x,car.position.y-3);
 	}
 	
 	i = i++;
 	while ( i >= 30) {
 		for (int j = 1; j<=2; j++) {
-			trafficCar= [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-			trafficPositionY=random()%465+5;
+			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+			trafficPositionY = random() % 465+5;
 			int px = [self randomlane];
 			int px2 = [self randomlane2];
-			trafficCar.position=ccp( px,trafficPositionY);
+			trafficCar.position = ccp(px, trafficPositionY);
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
 		}
-		i=i-60;
+		i = i - 60;
 	}
 }
 
 -(int) randomlane {
 	
 	int m=(random()%5+1);
-	if (m==1)
-	{
+	if (m==1){
 		trafficPositionX=32;
 	}	
-	else if (m==2)
-	{
+	else if (m==2){
 		trafficPositionX=96;
 	}	
-	else if (m==3)
-	{
+	else if (m==3){
 		trafficPositionX=160;
 	}	
-	else if (m==4)
-	{
+	else if (m==4){
 		trafficPositionX=224;
-	}	
-	else
-	{
+	}else{
 		trafficPositionX=288;
 	}
-	
-	
 	return trafficPositionX;
-	
-	
 }	
 
 -(int) randomlane2 {
-	int c=(random()%480+1);
-	if (c>240){
-		trafficPositionY=c+200;
+	int c = (random()%480+1);
+	if (c > 240){
+		trafficPositionY = c + 200;
 	}
 	else if (c<=100){
 		trafficPositionY=c+470;

@@ -294,7 +294,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>69 -45 1280 902 0 0 1280 1002 </string>
+						<string>-6 100 1280 902 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +324,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F24BCC413C4E7F700A66D09</string>
+										<string>3F24BCC713C4E91B00A66D09</string>
 										<key>history</key>
 										<array>
 											<string>3F24BCC113C4E7F700A66D09</string>
@@ -341,14 +341,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1072, 671}}</string>
+								<string>{{0, 0}, {1072, 856}}</string>
 								<key>RubberWindowFrame</key>
-								<string>69 -45 1280 902 0 0 1280 1002 </string>
+								<string>-6 100 1280 902 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>671pt</string>
+							<string>856pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -361,14 +361,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 676}, {1072, 185}}</string>
+								<string>{{0, 861}, {1072, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>69 -45 1280 902 0 0 1280 1002 </string>
+								<string>-6 100 1280 902 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>185pt</string>
+							<string>0pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -533,7 +533,7 @@
 		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>69 -45 1280 902 0 0 1280 1002 </string>
+	<string>-6 100 1280 902 0 0 1280 1002 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
