@@ -6,6 +6,8 @@
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
 
+//pH just created a comment...YAY!
+
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
