@@ -1,10 +1,10 @@
 //
 //  HelloWorldLayer.m
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //  Traffic
-=======
+//=======
 //  Car Project
->>>>>>> 8b70d25d2d82869278649254a393e360aeeb4f1e
+//>>>>>>> 8b70d25d2d82869278649254a393e360aeeb4f1e
 //
 //  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
@@ -39,7 +39,6 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init])) {
-<<<<<<< HEAD
 		
 		// create and initialize a Label
 		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Traffic" fontName:@"Marker Felt" fontSize:64];
@@ -63,12 +62,10 @@
 			
 		}
 		
-=======
 		myCar=[CCSprite spriteWithFile:@"myCar.png"];
 		myCar.position = ccp(160,70);
 		[self addChild:myCar];
 		self.isTouchEnabled=YES;
->>>>>>> 8b70d25d2d82869278649254a393e360aeeb4f1e
 	}
 	
 	return self;
