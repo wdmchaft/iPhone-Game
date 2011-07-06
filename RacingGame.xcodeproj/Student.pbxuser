@@ -8,9 +8,9 @@
 	};
 	1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {903, 2249}}";
-			sepNavSelRange = "{333, 13}";
-			sepNavVisRange = "{0, 1268}";
+			sepNavIntBoundsRect = "{{0, 0}, {903, 2067}}";
+			sepNavSelRange = "{3595, 0}";
+			sepNavVisRange = "{2445, 1505}";
 		};
 	};
 	1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */ = {
@@ -23,7 +23,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 3F3ABF1913C4E682003A8D20 /* RacingGame */;
-		activeSDKPreference = iphonesimulator4.2;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* RacingGame */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* RacingGame */,
@@ -150,6 +150,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = RacingGame;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -188,7 +190,7 @@
 	3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1069, 1404}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavSelRange = "{417, 13}";
 			sepNavVisRange = "{0, 1165}";
 		};
 	};
