@@ -1,13 +1,10 @@
 //
 //  HelloWorldLayer.h
-//  RacingGame
+//  Traffic
 //
-//  Created by pH on 7/5/11.
+//  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
 //
-
-//My Change
-
 
 
 // When you import this file, you import all the cocos2d classes
@@ -16,6 +13,10 @@
 // HelloWorldLayer
 @interface HelloWorldLayer : CCLayer
 {
+	CCSprite *trafficCar;
+	int trafficPositionX;
+	int trafficPositionY;
+	CGPoint pos;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
