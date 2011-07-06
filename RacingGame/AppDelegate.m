@@ -10,6 +10,8 @@
 
 //This is a change
 
+//456
+
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
@@ -44,6 +46,7 @@
 }
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
+	srandom(time(NULL));
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
