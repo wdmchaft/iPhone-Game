@@ -295,7 +295,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 122 1280 880 0 0 1280 1002 </string>
+						<string>-2 122 1280 880 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -325,7 +325,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F3ABE1713C4B4D7003A8D20</string>
+										<string>3F3ABE2613C4D226003A8D20</string>
 										<key>history</key>
 										<array>
 											<string>3F3ABDDC13C4B244003A8D20</string>
@@ -333,8 +333,8 @@
 											<string>3F3ABDDE13C4B244003A8D20</string>
 											<string>3F3ABDDF13C4B244003A8D20</string>
 											<string>3F3ABDE013C4B244003A8D20</string>
-											<string>3F3ABE0313C4B39B003A8D20</string>
-											<string>3F3ABE0413C4B39B003A8D20</string>
+											<string>3F3ABE2413C4D226003A8D20</string>
+											<string>3F3ABE2513C4D226003A8D20</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -348,7 +348,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1072, 640}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 122 1280 880 0 0 1280 1002 </string>
+								<string>-2 122 1280 880 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -368,7 +368,7 @@
 								<key>Frame</key>
 								<string>{{0, 645}, {1072, 194}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 122 1280 880 0 0 1280 1002 </string>
+								<string>-2 122 1280 880 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -540,7 +540,7 @@
 		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 122 1280 880 0 0 1280 1002 </string>
+	<string>-2 122 1280 880 0 0 1280 1002 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

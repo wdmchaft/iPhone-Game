@@ -79,9 +79,9 @@
 }
 
 -(void)nextFrame:(ccTime)dt{
-	roadWay.position=ccp(roadWay.position.x,roadWay.position.y-5);
+	roadWay.position=ccp(roadWay.position.x,roadWay.position.y-480);
 	if (roadWay.position.y < 0) {
-		//roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
+		roadWay.position=ccp(roadWay.position.x,roadWay.position.y+480);
 	}
 }
 
@@ -118,12 +118,12 @@
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	for (UITouch * touch in touches) {
 		CGPoint location = [self convertTouchToNodeSpace:touch];
-		if (location.x <= 159 && myCar.position.x>100) {
+		if (location.x <= 159 && myCar.position.x>80) {
 			
-			myCar.position=ccp(myCar.position.x-58,myCar.position.y);
+			myCar.position=ccp(myCar.position.x-62,myCar.position.y);
 		}
-		if (location.x >= 160 && myCar.position.x<220) {
-			myCar.position=ccp(myCar.position.x+58,	
+		if (location.x >= 160 && myCar.position.x<240) {
+			myCar.position=ccp(myCar.position.x+62,	
 							   myCar.position.y);		
 		}
 		//[myCar stopAllActions];
