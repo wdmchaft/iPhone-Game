@@ -136,6 +136,7 @@
 			if(life==0){
 				CCScene * newScene = [YOULOSE scene];
 				[[CCDirector sharedDirector] replaceScene:newScene];
+				/*[[CCDirector sharedDirector] replaceScene:[newScene];*/ 
 				CCLayer *layer=[newScene getChildByTag:2];
 				[layer loser:score];
 

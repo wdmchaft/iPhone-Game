@@ -24,6 +24,7 @@
 		3F8E4FEA13C4EC8100CB3A00 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE913C4EC8100CB3A00 /* Button.png */; };
 		3F9A93B313C624B8005DF89B /* YOULOSE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A93B113C624B8005DF89B /* YOULOSE.m */; };
 		3F9A93D013C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */; };
+		3F9A948213C64362005DF89B /* PlayAgain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A948113C64362005DF89B /* PlayAgain.png */; };
 		3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD08DC513C5FDA700994D11 /* car_sprite.png */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
@@ -290,6 +291,7 @@
 		3F9A93B113C624B8005DF89B /* YOULOSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOULOSE.m; path = "/Volumes/InstructorShare/Car Project/Car Project K/YOULOSE.m"; sourceTree = "<absolute>"; };
 		3F9A93B213C624B8005DF89B /* YOULOSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOULOSE.h; path = "/Volumes/InstructorShare/Car Project/Car Project K/YOULOSE.h"; sourceTree = "<absolute>"; };
 		3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BUTTON-FOR-THE-OBESE-KID.png"; path = "/Volumes/InstructorShare/Car Project/Pictures/BUTTON-FOR-THE-OBESE-KID.png"; sourceTree = "<absolute>"; };
+		3F9A948113C64362005DF89B /* PlayAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayAgain.png; path = ../Classes/PlayAgain.png; sourceTree = "<group>"; };
 		3FD08DC513C5FDA700994D11 /* car_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_sprite.png; path = ../car_sprite.png; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
@@ -688,6 +690,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A948113C64362005DF89B /* PlayAgain.png */,
 				3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3FD08DC513C5FDA700994D11 /* car_sprite.png */,
@@ -1164,6 +1167,7 @@
 				6F42BC1713C5FC8F007D7B4A /* Highway3 copy.png in Resources */,
 				3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */,
 				3F9A93D013C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png in Resources */,
+				3F9A948213C64362005DF89B /* PlayAgain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
