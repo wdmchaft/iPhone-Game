@@ -55,16 +55,13 @@
 		life = 3;
 		//creating myCar
 		
-        myCar=[CCSprite spriteWithFile:@"myCar.png"];
-        myCar.position = ccp(160,70);
-        myCar=[CCSprite spriteWithFile:@"car_sprite.png"];
+        myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
         myCar.position = ccp(160,70);
         [self addChild:myCar z:10];
         self.isTouchEnabled=YES;
         
         
         roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
-        //fix the center point as the picture is too large (320x5000)
         roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
         roadWay.position = ccp(160,0);
         [self addChild:roadWay z:0];
@@ -79,13 +76,13 @@
 }
 
 -(void)nextFrame:(ccTime)dt{
-    roadWay.position = ccp(roadWay.position.x, roadWay.position.y +roadspeed);
+    roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
     }
     
     for(CCSprite *car in enemies){
-        car.position = ccp(car.position.x,car.position.y+enemyspeed);
+        car.position = ccp(car.position.x,car.position.y+(-0.0019*x)+enemyspeed);
 		if(car.position.y<=-120)
 		{
 			[enemies removeObject:car];
@@ -95,7 +92,7 @@
 		i = i++;
 	}
 		while ( i >= 30) {
-			for (int j = 1; j<=2; j++) {
+			for (int j = 1; j<=(3+(0.0013*x)); j++) {
 				trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 				trafficPositionY = random() % 465+5;
 				int px = [self randomlane];
@@ -116,7 +113,7 @@
 				
 				[self addChild: trafficCar z:10];
 			}
-			i = i - 60;
+			i = i - 70;
     }
     
     for(CCSprite *car in enemies){
@@ -139,13 +136,11 @@
 	if(x>120){
 		roadspeed=-5;
 		enemyspeed=-3;
-		CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite.png"]];
+		CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite 2.png"]];
 		[myCar setTexture:texture];		
 	}
     
 }
-
-
 
 -(int) randomlane {
     
