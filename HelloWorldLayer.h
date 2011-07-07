@@ -36,6 +36,7 @@
 	int x;
 	int px;
 	int px2;
+	int score;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

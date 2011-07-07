@@ -15,6 +15,7 @@
 #import "HelloWorldLayer.h"
 #import "CCTouchDispatcher.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "YOULOSE.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -81,6 +82,7 @@
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
+		score++;
     }
     
     for(CCSprite *car in enemies){
@@ -99,7 +101,7 @@
 			px = [self randomlane];
 			px2 = [self randomlane2];
 			trafficCar.position = ccp(px, px2);
-		
+			
 			for(CCSprite *car in enemies){
 				
 				while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
@@ -109,71 +111,94 @@
 				}
 				
 			}
-				[enemies addObject:trafficCar];
+			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
 		}
-			//hopefully our five car not spawning together code
-			for(CCSprite *car in enemies){
-			 
-			 if((trafficCar.position.x==32)&&(car.position.x==96)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==96)&&(car.position.x==32)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==96)&&(car.position.x==160)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==160)&&(car.position.x==96)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==160)&&(car.position.x==224)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==224)&&(car.position.x==160)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==224)&&(car.position.x==228)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 
-			 if((trafficCar.position.x==288)&&(car.position.x==224)){
-			 if(abs(trafficCar.position.y-car.position.y)<=40){
-			 px2+=40;
-			 trafficCar.position=ccp(px,px2);
-			 }
-			 }
-			 }	
+		//hopefully our five car not spawning together code
+		for(CCSprite *car in enemies){
 			
-			i = i - 70;
+			if((trafficCar.position.x==32)&&(car.position.x==96)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==96)&&(car.position.x==32)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==96)&&(car.position.x==160)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==160)&&(car.position.x==96)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==160)&&(car.position.x==224)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==224)&&(car.position.x==160)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==224)&&(car.position.x==228)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			if((trafficCar.position.x==288)&&(car.position.x==224)){
+				if(abs(trafficCar.position.y-car.position.y)<=40){
+					px2+=40;
+					trafficCar.position=ccp(px,px2);
+				}
+			}
+			
+			
 		}
+		i = i - 60;
+    }
+    
+    for(CCSprite *car in enemies){
+        
+        if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+            NSLog(@"collision  ");
+            CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+			roadspeed=0;
+			enemyspeed=3;
+			x=0;
+			i=-180; //time before cars spawn again
+            [myCar setTexture:texture];
+			life--;
+			if(life==0){
+				CCScene * newScene = [YOULOSE scene];
+				[[CCDirector sharedDirector] replaceScene:newScene];
+				/*[[CCDirector sharedDirector] replaceScene:[newScene];*/ 
+				CCLayer *layer=[newScene getChildByTag:2];
+				[layer loser:score];
+				
+			}
+        }
 		
 		//collision code
 		for(CCSprite *car in enemies){
@@ -192,64 +217,65 @@
 			
 		}
 		x++;
-	//time we get before our car spawns
-	if(x>120){
-		roadspeed=-5;
-		enemyspeed=-3;
-		CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite 2.png"]];
-		[myCar setTexture:texture];		
-	}
-	}
-
--(int) randomlane {
-	
-	int m=(random()%5+1);
-	if (m==1){
-		trafficPositionX=32;
-	}	
-	else if (m==2){
-		trafficPositionX=96;
-	}	
-	else if (m==3){
-		trafficPositionX=160;
-	}	
-	else if (m==4){
-		trafficPositionX=224;
-	}else{
-		trafficPositionX=288;
-	}
-	return trafficPositionX;
-}	
-
--(int) randomlane2 {
-	int c = (random()%480+1);
-	
-	trafficPositionY = c + 480;
-	return trafficPositionY;
-}
-
-- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	for (UITouch * touch in touches) {
-		CGPoint location = [self convertTouchToNodeSpace:touch];
-		if (location.x <= 159 && myCar.position.x>50) {
-			
-			myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+		//time we get before our car spawns
+		if(x>120){
+			roadspeed=-5;
+			enemyspeed=-3;
+			CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite 2.png"]];
+			[myCar setTexture:texture];		
 		}
-		if (location.x >= 160 && myCar.position.x<270) {
-			myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
-		}
-		//[myCar stopAllActions];
 	}
 }
-
-// on "dealloc" you need to release all your retained objects
-
-- (void) dealloc{
-	// in case you have something to dealloc, do it in this method
-	// in this particular example nothing needs to be released.
-	// cocos2d will automatically release all the children (Label)
 	
-	// don't forget to call "super dealloc"
-	[super dealloc];
-}
-@end
+	-(int) randomlane {
+		
+		int m=(random()%5+1);
+		if (m==1){
+			trafficPositionX=32;
+		}	
+		else if (m==2){
+			trafficPositionX=96;
+		}	
+		else if (m==3){
+			trafficPositionX=160;
+		}	
+		else if (m==4){
+			trafficPositionX=224;
+		}else{
+			trafficPositionX=288;
+		}
+		return trafficPositionX;
+	}	
+	
+	-(int) randomlane2 {
+		int c = (random()%480+1);
+		
+		trafficPositionY = c + 480;
+		return trafficPositionY;
+	}
+	
+	- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+		for (UITouch * touch in touches) {
+			CGPoint location = [self convertTouchToNodeSpace:touch];
+			if (location.x <= 159 && myCar.position.x>50) {
+				
+				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+			}
+			if (location.x >= 160 && myCar.position.x<270) {
+				myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
+			}
+			//[myCar stopAllActions];
+		}
+	}
+	
+	// on "dealloc" you need to release all your retained objects
+	
+	- (void) dealloc{
+		// in case you have something to dealloc, do it in this method
+		// in this particular example nothing needs to be released.
+		// cocos2d will automatically release all the children (Label)
+		
+		// don't forget to call "super dealloc"
+		[super dealloc];
+	}
+	@end

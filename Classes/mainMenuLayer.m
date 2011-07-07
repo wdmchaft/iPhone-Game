@@ -50,15 +50,15 @@
 		
 		// add the label as a child to this Layer
 		//[self addChild: label];
-		CCMenuItem *item = [CCMenuItemImage itemFromNormalImage:@"Button.png" selectedImage:@"Button.png" target: self selector:@selector(startGame:)];
-		item.position = ccp(200, 150);
+		CCMenuItem *item = [CCMenuItemImage itemFromNormalImage:@"BUTTON-FOR-THE-OBESE-KID.png" selectedImage:@"BUTTON-FOR-THE-OBESE-KID.png" target: self selector:@selector(startGame:)];
+		item.position = ccp(160, 150);
 		
 		CCMenu *menu = [CCMenu menuWithItems:item, nil];
 		menu.position = CGPointZero;
 		[self addChild:menu];
 		CCLabelTTF *welcome = [CCLabelTTF labelWithString:@"Welcome to Traffic" fontName:@"Marker Felt" fontSize:40];
 		// position the label on the center of the screen
-		welcome.position =  ccp(160, 240);
+		welcome.position =  ccp(160, 300);
 		
 		// add the label as a child to this Layer
 		[self addChild: welcome];
