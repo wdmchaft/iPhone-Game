@@ -71,14 +71,27 @@
         [self schedule:@selector(nextFrame:)];
 		enemyspeed=-3;
 		roadspeed=-5;
-		
-		
-    }
-    
+	}
+	//supposedly going to make a score counter in the left corner
+	//however, it makes a "Too few arguments to function" error.
+	scorecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score: %i", score] fontName:@"Marker Felt" fontSize:20];
+		//next line doesnt create errors
+	scorecounter.position =  ccp(50, 50);
+	//[self addChild:/*we need a sprite but we dont have one*/];
+	//life counter
+	[self addChild:scorecounter z:0];
+	lifecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Life: %i", life] fontName:@"Marker Felt" fontSize:20];
+	
+	lifecounter.position =  ccp(270, 50);
+    //[self addChild:/*we need a sprite but we dont have one*/];
+	[self addChild:lifecounter z:0];
     return self;
+	
 }
 
 -(void)nextFrame:(ccTime)dt{
+	lifecounter.string = [NSString stringWithFormat:@"Life: %i", life];
+	scorecounter.string = [NSString stringWithFormat:@"Score: %i", score];
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
@@ -181,7 +194,7 @@
     for(CCSprite *car in enemies){
         
         if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-            NSLog(@"collision  ");
+            //NSLog(@"collision  ");
             CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 			roadspeed=0;
@@ -190,10 +203,11 @@
 			i=-180; //time before cars spawn again
             [myCar setTexture:texture];
 			life--;
+			NSLog(@"%i", life);
 			if(life==0){
 				CCScene * newScene = [YOULOSE scene];
 				[[CCDirector sharedDirector] replaceScene:newScene];
-				/*[[CCDirector sharedDirector] replaceScene:[newScene];*/ 
+				NSLog(@"Lost");
 				CCLayer *layer=[newScene getChildByTag:2];
 				[layer loser:score];
 				
