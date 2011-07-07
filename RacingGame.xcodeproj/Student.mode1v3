@@ -266,13 +266,13 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>2D500B1D0D5A766B00DBA0E3</string>
 								<string>50F414EB1069373D002A0D5E</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>9</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HelloWorldLayer.m</string>
+								<string>YOULOSE.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,23 +322,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HelloWorldLayer.m</string>
+										<string>YOULOSE.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F9A93CA13C6261F005DF89B</string>
+										<string>3F9A943813C6307F005DF89B</string>
 										<key>history</key>
 										<array>
 											<string>3FD08DFD13C605CA00994D11</string>
 											<string>3FD08DFE13C605CA00994D11</string>
 											<string>3F9A93C213C6261F005DF89B</string>
 											<string>3F9A93C313C6261F005DF89B</string>
-											<string>3F9A93C413C6261F005DF89B</string>
-											<string>3F9A93C513C6261F005DF89B</string>
-											<string>3F9A93C613C6261F005DF89B</string>
-											<string>3F9A93C713C6261F005DF89B</string>
-											<string>3F9A93C813C6261F005DF89B</string>
-											<string>3F9A93C913C6261F005DF89B</string>
+											<string>3F9A941F13C62EFF005DF89B</string>
+											<string>3F9A942013C62EFF005DF89B</string>
+											<string>3F9A942213C62EFF005DF89B</string>
+											<string>3F9A942313C62EFF005DF89B</string>
+											<string>3F9A942413C62EFF005DF89B</string>
+											<string>3F9A942513C62EFF005DF89B</string>
+											<string>3F9A943013C63051005DF89B</string>
+											<string>3F9A943613C6307F005DF89B</string>
+											<string>3F9A943713C6307F005DF89B</string>
+											<string>3F9A943113C63051005DF89B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -536,9 +540,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3FD08DA213C5FD4400994D11</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -563,7 +567,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>YOULOSE.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -580,6 +584,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -874,6 +880,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -919,7 +927,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -83,6 +83,7 @@
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
+		score++;
     }
     
     for(CCSprite *car in enemies){
@@ -135,6 +136,8 @@
 			if(life==0){
 				CCScene * newScene = [YOULOSE scene];
 				[[CCDirector sharedDirector] replaceScene:newScene];
+				CCLayer *layer=[newScene getChildByTag:2];
+				[layer loser:score];
 
 			}
         }

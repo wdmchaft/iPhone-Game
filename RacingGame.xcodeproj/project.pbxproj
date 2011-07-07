@@ -23,6 +23,7 @@
 		3F8E4FE813C4EC6F00CB3A00 /* Cheats.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */; };
 		3F8E4FEA13C4EC8100CB3A00 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE913C4EC8100CB3A00 /* Button.png */; };
 		3F9A93B313C624B8005DF89B /* YOULOSE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A93B113C624B8005DF89B /* YOULOSE.m */; };
+		3F9A93D013C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */; };
 		3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD08DC513C5FDA700994D11 /* car_sprite.png */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
@@ -288,6 +289,7 @@
 		3F8E4FE913C4EC8100CB3A00 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		3F9A93B113C624B8005DF89B /* YOULOSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOULOSE.m; path = "/Volumes/InstructorShare/Car Project/Car Project K/YOULOSE.m"; sourceTree = "<absolute>"; };
 		3F9A93B213C624B8005DF89B /* YOULOSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOULOSE.h; path = "/Volumes/InstructorShare/Car Project/Car Project K/YOULOSE.h"; sourceTree = "<absolute>"; };
+		3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BUTTON-FOR-THE-OBESE-KID.png"; path = "/Volumes/InstructorShare/Car Project/Pictures/BUTTON-FOR-THE-OBESE-KID.png"; sourceTree = "<absolute>"; };
 		3FD08DC513C5FDA700994D11 /* car_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_sprite.png; path = ../car_sprite.png; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
@@ -608,8 +610,8 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3F9A93B113C624B8005DF89B /* YOULOSE.m */,
 				3F9A93B213C624B8005DF89B /* YOULOSE.h */,
+				3F9A93B113C624B8005DF89B /* YOULOSE.m */,
 				3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */,
 				3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
@@ -686,6 +688,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A93CF13C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3FD08DC513C5FDA700994D11 /* car_sprite.png */,
 				3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */,
@@ -1160,6 +1163,7 @@
 				3F0CAB3313C5EF1C009FB188 /* Explosion.png in Resources */,
 				6F42BC1713C5FC8F007D7B4A /* Highway3 copy.png in Resources */,
 				3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */,
+				3F9A93D013C62973005DF89B /* BUTTON-FOR-THE-OBESE-KID.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
