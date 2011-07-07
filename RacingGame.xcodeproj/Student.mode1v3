@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -306,8 +308,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -322,26 +322,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>HelloWorldLayer.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>3F0CAAC713C54D66009FB188</string>
-										<key>history</key>
-										<array>
-											<string>3F24BCC213C4E7F700A66D09</string>
-											<string>3F45B39613C4F1610082D74C</string>
-											<string>3F45B39713C4F1610082D74C</string>
-											<string>3F45B3FB13C4F7E50082D74C</string>
-											<string>3F0CAA5413C4FED7009FB188</string>
-											<string>3F0CAA8A13C53BB7009FB188</string>
-											<string>3F0CAA8B13C53BB7009FB188</string>
-											<string>3F0CAA8C13C53BB7009FB188</string>
-											<string>3F0CAAC013C54947009FB188</string>
-											<string>3F0CAAC113C54947009FB188</string>
-											<string>3F0CAAC213C54947009FB188</string>
-											<string>3F0CAAC313C54947009FB188</string>
-											<string>3F0CAAC413C54947009FB188</string>
-										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -398,9 +378,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3F0CAA7013C518CF009FB188</string>
+				<string>3F0CAAD613C5E6C0009FB188</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>3F0CAA7113C518CF009FB188</string>
+				<string>3F0CAAD713C5E6C0009FB188</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -538,8 +518,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3F24BCA213C4E79C00A66D09</string>
 		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
@@ -565,7 +543,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HelloWorldLayer.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -582,8 +560,6 @@
 							<string>432pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -623,7 +599,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>3F24BCA213C4E79C00A66D09</string>
-				<string>3F0CAA7213C518CF009FB188</string>
+				<string>3F0CAAD813C5E6C0009FB188</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
