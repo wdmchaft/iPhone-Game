@@ -53,13 +53,10 @@
 		enemies=[[NSMutableArray alloc] init];
 		
 		life = 3;
-		
 		//creating myCar
 		
         myCar=[CCSprite spriteWithFile:@"myCar.png"];
         myCar.position = ccp(160,70);
-        //creating myCar
-        
         myCar=[CCSprite spriteWithFile:@"car_sprite.png"];
         myCar.position = ccp(160,70);
         [self addChild:myCar z:10];
@@ -74,45 +71,52 @@
         roadWay2.position = ccp(160,1058);
         [self addChild:roadWay2 z:0];		
         [self schedule:@selector(nextFrame:)];
-        
+		enemyspeed=-3;
+		roadspeed=-5;
     }
     
     return self;
 }
 
 -(void)nextFrame:(ccTime)dt{
-    roadWay.position = ccp(roadWay.position.x, roadWay.position.y - 5);
+    roadWay.position = ccp(roadWay.position.x, roadWay.position.y +roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
     }
     
     for(CCSprite *car in enemies){
-        car.position = ccp(car.position.x,car.position.y-3);
+        car.position = ccp(car.position.x,car.position.y+enemyspeed);
+		if(car.position.y<=-120)
+		{
+			[enemies removeObject:car];
+		}
     }
-    
-    i = i++;
-    while ( i >= 30) {
-        for (int j = 1; j<=2; j++) {
-            trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-            trafficPositionY = random() % 465+5;
-            int px = [self randomlane];
-            int px2 = [self randomlane2];
-            trafficCar.position = ccp(px, px2);
-            
-            for(CCSprite *car in enemies){
-                
-                while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
-                    px = [self randomlane];
-                    px2 = [self randomlane2];
-                    NSLog(@"x:%i y:%i",px,px2);
-                    trafficCar.position = ccp(px, px2);
-                }
-            }
-            [enemies addObject:trafficCar];
-            
-            [self addChild: trafficCar z:10];
-        }
-        i = i - 60;
+	if(x>120){
+		i = i++;
+	}
+		while ( i >= 30) {
+			for (int j = 1; j<=2; j++) {
+				trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+				trafficPositionY = random() % 465+5;
+				int px = [self randomlane];
+				int px2 = [self randomlane2];
+				trafficCar.position = ccp(px, px2);
+				
+				for(CCSprite *car in enemies){
+					
+					while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
+						px = [self randomlane];
+						px2 = [self randomlane2];
+						NSLog(@"x:%i y:%i",px,px2);
+						trafficCar.position = ccp(px, px2);
+					}
+					
+				}
+				[enemies addObject:trafficCar];
+				
+				[self addChild: trafficCar z:10];
+			}
+			i = i - 60;
     }
     
     for(CCSprite *car in enemies){
@@ -121,9 +125,23 @@
             NSLog(@"collision  ");
             CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+			roadspeed=0;
+			enemyspeed=3;
+			x=0;
+			i=-60;
             [myCar setTexture:texture];
+			life--;
         }
+		
     }
+	x++;
+	//time we get befoew our cars spawns
+	if(x>120){
+		roadspeed=-5;
+		enemyspeed=-3;
+		CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite.png"]];
+		[myCar setTexture:texture];		
+	}
     
 }
 

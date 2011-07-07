@@ -31,6 +31,9 @@
 	int life;
 	CCSprite *Collision;
 	CCSprite *Explosion;
+	int roadspeed;
+	int enemyspeed;
+	int x;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
