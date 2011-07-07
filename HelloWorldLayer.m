@@ -172,12 +172,12 @@
 					trafficCar.position=ccp(px,px2);
 				}
 			}
-			
-			
+		
+			i = i - 70;
 		}
-		i = i - 60;
+		
     }
-    
+    x++;
     for(CCSprite *car in enemies){
         
         if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
@@ -216,7 +216,7 @@
 			}
 			
 		}
-		x++;
+		
 		//time we get before our car spawns
 		if(x>120){
 			roadspeed=-5;
