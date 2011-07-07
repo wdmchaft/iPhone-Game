@@ -15,6 +15,7 @@
 #import "HelloWorldLayer.h"
 #import "CCTouchDispatcher.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "YOULOSE.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -131,6 +132,11 @@
 			i=-180; //time before cars spawn again
             [myCar setTexture:texture];
 			life--;
+			if(life==0){
+				CCScene * newScene = [YOULOSE scene];
+				[[CCDirector sharedDirector] replaceScene:newScene];
+
+			}
         }
 		
     }
