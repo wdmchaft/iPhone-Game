@@ -51,13 +51,22 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		enemies=[[NSMutableArray alloc] init];
+
+		life = 108;
 		
+<<<<<<< HEAD
 		life = 3;
 		
 		//creating myCar
 		{
 			myCar=[CCSprite spriteWithFile:@"myCar.png"];
 			myCar.position = ccp(160,70);
+=======
+		//creating myCar
+		{
+		myCar=[CCSprite spriteWithFile:@"car_sprite.png"];
+		myCar.position = ccp(160,70);
+>>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
 			[self addChild:myCar z:10];
 			self.isTouchEnabled=YES;
 		}
@@ -97,6 +106,7 @@
 			
 			for(CCSprite *car in enemies){
 				
+<<<<<<< HEAD
 				if( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
 					px = [self randomlane];
 					if (CGRectContainsRect([car boundingBox], [trafficCar boundingBox]))
@@ -105,6 +115,13 @@
 						NSLog(@"x:%i y:%i",px,px2);
 						trafficCar.position = ccp(px, px2);
 					}
+=======
+			while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
+					px = [self randomlane];
+					px2 = [self randomlane2];
+					NSLog(@"x:%i y:%i",px,px2);
+					trafficCar.position = ccp(px, px2);
+>>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
 				}
 			}
 				[enemies addObject:trafficCar];
@@ -114,6 +131,7 @@
 			i = i - 60;
 		}
 		
+<<<<<<< HEAD
 	
 		for(CCSprite *car in enemies){
 			
@@ -133,6 +151,24 @@
 		}
 		
 	}
+=======
+		if( CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+			NSLog(@"collision  ");
+			life--;
+			NSLog(@"%i", life);
+			if (life==0) {
+				//changeScene;
+			}
+			
+		}
+	}
+	//
+
+}
+
+
+-(int) randomlane {
+>>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
 	
 	
 	
