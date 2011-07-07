@@ -93,14 +93,14 @@
 			int px = [self randomlane];
 			int px2 = [self randomlane2];
 			trafficCar.position = ccp(px, px2);
+			
 			for(CCSprite *car in enemies){
 				
-				while (CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]))
-				{
+			if( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
 					px = [self randomlane];
 					px2 = [self randomlane2];
 					NSLog(@"x:%i y:%i",px,px2);
-					trafficCar.position = ccp(px, px2); 
+					trafficCar.position = ccp(px, px2);
 				}
 			}
 			[enemies addObject:trafficCar];
@@ -110,12 +110,21 @@
 		i = i - 60;
 	}
 	
+	
+	for(CCSprite *car in enemies){
+		
+		if( CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+			NSLog(@"collision  ");
+			
+		}
+	}
+	//
 	trafficCar.position = ccp(trafficCar.position.x,trafficCar.position.y-3);
 	if ( CGRectIntersectsRect(myCar.boundingBox, trafficCar.boundingBox)) {
 		life--;
 		NSLog(@"%i", life);
+		
 	}
-	
 }
 
 
