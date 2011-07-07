@@ -128,7 +128,7 @@
 			roadspeed=0;
 			enemyspeed=3;
 			x=0;
-			i=-60;
+			i=-180; //time before cars spawn again
             [myCar setTexture:texture];
 			life--;
         }
