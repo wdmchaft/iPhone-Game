@@ -554,8 +554,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
 				3F45B3BB13C4F4C90082D74C /* Highway3 copy.png */,
+				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,

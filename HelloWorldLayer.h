@@ -28,6 +28,7 @@
 	CCSprite *roadWay;
 	float i;
 	CCSprite *roadWay2;
+	int life;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
