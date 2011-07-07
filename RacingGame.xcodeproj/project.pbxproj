@@ -24,6 +24,10 @@
 		3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD08DC513C5FDA700994D11 /* car_sprite.png */; };
 		3FD08E8D13C6261E00994D11 /* car_sprite 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD08E8C13C6261E00994D11 /* car_sprite 2.png */; };
 		3FD08ECB13C6290400994D11 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FD08ECA13C6290400994D11 /* Icon.png */; };
+		3FDEF6D913C646EE00BB568A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDEF6D813C646EE00BB568A /* Default.png */; };
+		3FDEF6F413C6483700BB568A /* YOULOSE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEF6F313C6483700BB568A /* YOULOSE.m */; };
+		3FDEF70C13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDEF70B13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png */; };
+		3FDEF70E13C648B800BB568A /* PlayAgain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDEF70D13C648B800BB568A /* PlayAgain.png */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
 		504DFBD010AF12E9006D82FE /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */; };
@@ -60,7 +64,6 @@
 		50F4132F106926B2002A0D5E /* FontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4130C106926B2002A0D5E /* FontManager.m */; };
 		50F41332106926B2002A0D5E /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F4130F106926B2002A0D5E /* ZFont.h */; };
 		50F41333106926B2002A0D5E /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F41310106926B2002A0D5E /* ZFont.m */; };
-		50F414F01069373D002A0D5E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414EC1069373D002A0D5E /* Default.png */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		6F42BC1713C5FC8F007D7B4A /* Highway3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
@@ -282,6 +285,11 @@
 		3FD08DC513C5FDA700994D11 /* car_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_sprite.png; path = ../car_sprite.png; sourceTree = "<group>"; };
 		3FD08E8C13C6261E00994D11 /* car_sprite 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_sprite 2.png"; sourceTree = "<group>"; };
 		3FD08ECA13C6290400994D11 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		3FDEF6D813C646EE00BB568A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		3FDEF6F213C6483700BB568A /* YOULOSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOULOSE.h; sourceTree = "<group>"; };
+		3FDEF6F313C6483700BB568A /* YOULOSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOULOSE.m; sourceTree = "<group>"; };
+		3FDEF70B13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BUTTON-FOR-THE-OBESE-KID.png"; path = "../BUTTON-FOR-THE-OBESE-KID.png"; sourceTree = "<group>"; };
+		3FDEF70D13C648B800BB568A /* PlayAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayAgain.png; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
 		504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerRequest.h; sourceTree = "<group>"; };
@@ -313,7 +321,6 @@
 		50F4130C106926B2002A0D5E /* FontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontManager.m; sourceTree = "<group>"; };
 		50F4130F106926B2002A0D5E /* ZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFont.h; sourceTree = "<group>"; };
 		50F41310106926B2002A0D5E /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
-		50F414EC1069373D002A0D5E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highway3 copy.png"; sourceTree = "<group>"; };
@@ -555,6 +562,8 @@
 				6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */,
 				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
+				3FDEF6F213C6483700BB568A /* YOULOSE.h */,
+				3FDEF6F313C6483700BB568A /* YOULOSE.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,
 				506EDAA3102F461B00A389B3 /* cocos2d Sources */,
@@ -673,7 +682,9 @@
 			children = (
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3FD08DC513C5FDA700994D11 /* car_sprite.png */,
+				3FDEF70D13C648B800BB568A /* PlayAgain.png */,
 				3FD08ECA13C6290400994D11 /* Icon.png */,
+				3FDEF70B13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png */,
 				3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */,
 				3F8E4FE913C4EC8100CB3A00 /* Button.png */,
 				3F0CA9EB13C4E9FC009FB188 /* Enemy-Cars.png */,
@@ -685,9 +696,9 @@
 				3F24BCBD13C4E7E200A66D09 /* Highway3.png */,
 				3F0CAB3213C5EF1C009FB188 /* Explosion.png */,
 				E02BB762126CC1E0006E46A2 /* iTunesArtwork */,
-				50F414EC1069373D002A0D5E /* Default.png */,
 				50F414ED1069373D002A0D5E /* fps_images.png */,
 				3FD08E8C13C6261E00994D11 /* car_sprite 2.png */,
+				3FDEF6D813C646EE00BB568A /* Default.png */,
 				50F414EF1069373D002A0D5E /* Info.plist */,
 			);
 			path = Resources;
@@ -1118,7 +1129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F414F01069373D002A0D5E /* Default.png in Resources */,
 				50F414F11069373D002A0D5E /* fps_images.png in Resources */,
 				E02BB763126CC1E0006E46A2 /* iTunesArtwork in Resources */,
 				3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */,
@@ -1135,6 +1145,9 @@
 				3FD08DC613C5FDA700994D11 /* car_sprite.png in Resources */,
 				3FD08E8D13C6261E00994D11 /* car_sprite 2.png in Resources */,
 				3FD08ECB13C6290400994D11 /* Icon.png in Resources */,
+				3FDEF6D913C646EE00BB568A /* Default.png in Resources */,
+				3FDEF70C13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png in Resources */,
+				3FDEF70E13C648B800BB568A /* PlayAgain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1150,6 +1163,7 @@
 				E0F80F60120A0182005866B8 /* RootViewController.m in Sources */,
 				3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */,
 				3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */,
+				3FDEF6F413C6483700BB568A /* YOULOSE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

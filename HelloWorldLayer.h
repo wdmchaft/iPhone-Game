@@ -34,6 +34,8 @@
 	int roadspeed;
 	int enemyspeed;
 	int x;
+	int px;
+	int px2;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

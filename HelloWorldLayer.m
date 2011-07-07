@@ -70,6 +70,8 @@
         [self schedule:@selector(nextFrame:)];
 		enemyspeed=-3;
 		roadspeed=-5;
+		
+		
     }
     
     return self;
@@ -91,106 +93,163 @@
 	if(x>120){
 		i = i++;
 	}
-		while ( i >= 30) {
-			for (int j = 1; j<=(3+(0.0013*x)); j++) {
-				trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-				trafficPositionY = random() % 465+5;
-				int px = [self randomlane];
-				int px2 = [self randomlane2];
-				trafficCar.position = ccp(px, px2);
-				
-				for(CCSprite *car in enemies){
-					
-					while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
-						px = [self randomlane];
-						px2 = [self randomlane2];
-						NSLog(@"x:%i y:%i",px,px2);
-						trafficCar.position = ccp(px, px2);
-					}
-					
-				}
-				[enemies addObject:trafficCar];
-				
-				[self addChild: trafficCar z:10];
-			}
-			i = i - 70;
-    }
-    
-    for(CCSprite *car in enemies){
-        
-        if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-            NSLog(@"collision  ");
-            CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-			roadspeed=0;
-			enemyspeed=3;
-			x=0;
-			i=-180; //time before cars spawn again
-            [myCar setTexture:texture];
-			life--;
-        }
+	while ( i >= 30) {
+		for (int j = 1; j<=(3+(0.0013*x)); j++) {
+			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+			px = [self randomlane];
+			px2 = [self randomlane2];
+			trafficCar.position = ccp(px, px2);
 		
-    }
-	x++;
-	//time we get befoew our cars spawns
+			for(CCSprite *car in enemies){
+				
+				while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
+					px = [self randomlane];
+					px2 = [self randomlane2];
+					trafficCar.position = ccp(px, px2);
+				}
+				
+			}
+				[enemies addObject:trafficCar];
+			[self addChild: trafficCar z:10];
+		}
+			//hopefully our five car not spawning together code
+			for(CCSprite *car in enemies){
+			 
+			 if((trafficCar.position.x==32)&&(car.position.x==96)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==96)&&(car.position.x==32)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==96)&&(car.position.x==160)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==160)&&(car.position.x==96)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==160)&&(car.position.x==224)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==224)&&(car.position.x==160)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==224)&&(car.position.x==228)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 
+			 if((trafficCar.position.x==288)&&(car.position.x==224)){
+			 if(abs(trafficCar.position.y-car.position.y)<=40){
+			 px2+=40;
+			 trafficCar.position=ccp(px,px2);
+			 }
+			 }
+			 }	
+			
+			i = i - 70;
+		}
+		
+		//collision code
+		for(CCSprite *car in enemies){
+			
+			if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+				NSLog(@"collision  ");
+				CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
+				AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+				roadspeed=0;
+				enemyspeed=3;
+				x=0;
+				i=-180; //time before trafficCars spawn again
+				[myCar setTexture:texture];
+				life--;
+			}
+			
+		}
+		x++;
+	//time we get before our car spawns
 	if(x>120){
 		roadspeed=-5;
 		enemyspeed=-3;
 		CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"car_sprite 2.png"]];
 		[myCar setTexture:texture];		
 	}
-    
-}
+	}
 
 -(int) randomlane {
-    
-    int m=(random()%5+1);
-    if (m==1){
-        trafficPositionX=32;
-    }	
-    else if (m==2){
-        trafficPositionX=96;
-    }	
-    else if (m==3){
-        trafficPositionX=160;
-    }	
-    else if (m==4){
-        trafficPositionX=224;
-    }else{
-        trafficPositionX=288;
-    }
-    return trafficPositionX;
+	
+	int m=(random()%5+1);
+	if (m==1){
+		trafficPositionX=32;
+	}	
+	else if (m==2){
+		trafficPositionX=96;
+	}	
+	else if (m==3){
+		trafficPositionX=160;
+	}	
+	else if (m==4){
+		trafficPositionX=224;
+	}else{
+		trafficPositionX=288;
+	}
+	return trafficPositionX;
 }	
 
 -(int) randomlane2 {
-    int c = (random()%480+1);
-    
-    trafficPositionY = c + 480;
-    return trafficPositionY;
+	int c = (random()%480+1);
+	
+	trafficPositionY = c + 480;
+	return trafficPositionY;
 }
 
 - (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    for (UITouch * touch in touches) {
-        CGPoint location = [self convertTouchToNodeSpace:touch];
-        if (location.x <= 159 && myCar.position.x>50) {
-            
-            myCar.position=ccp(myCar.position.x-64,myCar.position.y);
-        }
-        if (location.x >= 160 && myCar.position.x<270) {
-            myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
-        }
-        //[myCar stopAllActions];
-    }
+	for (UITouch * touch in touches) {
+		CGPoint location = [self convertTouchToNodeSpace:touch];
+		if (location.x <= 159 && myCar.position.x>50) {
+			
+			myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+		}
+		if (location.x >= 160 && myCar.position.x<270) {
+			myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
+		}
+		//[myCar stopAllActions];
+	}
 }
 
 // on "dealloc" you need to release all your retained objects
 
 - (void) dealloc{
-    // in case you have something to dealloc, do it in this method
-    // in this particular example nothing needs to be released.
-    // cocos2d will automatically release all the children (Label)
-    
-    // don't forget to call "super dealloc"
-    [super dealloc];
+	// in case you have something to dealloc, do it in this method
+	// in this particular example nothing needs to be released.
+	// cocos2d will automatically release all the children (Label)
+	
+	// don't forget to call "super dealloc"
+	[super dealloc];
 }
 @end
