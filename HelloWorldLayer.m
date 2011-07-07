@@ -51,176 +51,133 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		enemies=[[NSMutableArray alloc] init];
-
-		life = 108;
 		
-<<<<<<< HEAD
 		life = 3;
 		
 		//creating myCar
-		{
-			myCar=[CCSprite spriteWithFile:@"myCar.png"];
-			myCar.position = ccp(160,70);
-=======
-		//creating myCar
-		{
-		myCar=[CCSprite spriteWithFile:@"car_sprite.png"];
-		myCar.position = ccp(160,70);
->>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
-			[self addChild:myCar z:10];
-			self.isTouchEnabled=YES;
-		}
 		
-		roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
-		//fix the center point as the picture is too large (320x5000)
-		roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
-		roadWay.position = ccp(160,0);
-		[self addChild:roadWay z:0];
-		roadWay2.position = ccp(160,1058);
-		[self addChild:roadWay2 z:0];		
-		[self schedule:@selector(nextFrame:)];
-		
-	}
-	
-	return self;
+        myCar=[CCSprite spriteWithFile:@"myCar.png"];
+        myCar.position = ccp(160,70);
+        //creating myCar
+        
+        myCar=[CCSprite spriteWithFile:@"car_sprite.png"];
+        myCar.position = ccp(160,70);
+        [self addChild:myCar z:10];
+        self.isTouchEnabled=YES;
+        
+        
+        roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
+        //fix the center point as the picture is too large (320x5000)
+        roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
+        roadWay.position = ccp(160,0);
+        [self addChild:roadWay z:0];
+        roadWay2.position = ccp(160,1058);
+        [self addChild:roadWay2 z:0];		
+        [self schedule:@selector(nextFrame:)];
+        
+    }
+    
+    return self;
 }
 
 -(void)nextFrame:(ccTime)dt{
-	roadWay.position = ccp(roadWay.position.x, roadWay.position.y - 5);
-	if (roadWay.position.y < -50) {
-		roadWay.position = ccp(roadWay.position.x ,520);
-	}
-	
-	for(CCSprite *car in enemies){
-		car.position = ccp(car.position.x,car.position.y-3);
-	}
-	
-	i = i++;
-	while ( i >= 30) {
-		for (int j = 1; j<=2; j++) {
-			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-			trafficPositionY = random() % 465+5;
-			int px = [self randomlane];
-			int px2 = [self randomlane2];
-			trafficCar.position = ccp(px, px2);
-			
-			for(CCSprite *car in enemies){
-				
-<<<<<<< HEAD
-				if( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
-					px = [self randomlane];
-					if (CGRectContainsRect([car boundingBox], [trafficCar boundingBox]))
-					{
-						px2 = [self randomlane2];
-						NSLog(@"x:%i y:%i",px,px2);
-						trafficCar.position = ccp(px, px2);
-					}
-=======
-			while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
-					px = [self randomlane];
-					px2 = [self randomlane2];
-					NSLog(@"x:%i y:%i",px,px2);
-					trafficCar.position = ccp(px, px2);
->>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
-				}
-			}
-				[enemies addObject:trafficCar];
-				
-				[self addChild: trafficCar z:10];
-			}
-			i = i - 60;
-		}
-		
-<<<<<<< HEAD
-	
-		for(CCSprite *car in enemies){
-			
-			if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-				NSLog(@"collision  ");
-				CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
-				AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-				[myCar setTexture:texture];
-			}
-		}
-		//
-		trafficCar.position = ccp(trafficCar.position.x,trafficCar.position.y-3);
-		if ( CGRectIntersectsRect(myCar.boundingBox, trafficCar.boundingBox)) {
-			life--;
-			NSLog(@"%i", life);
-			
-		}
-		
-	}
-=======
-		if( CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-			NSLog(@"collision  ");
-			life--;
-			NSLog(@"%i", life);
-			if (life==0) {
-				//changeScene;
-			}
-			
-		}
-	}
-	//
-
+    roadWay.position = ccp(roadWay.position.x, roadWay.position.y - 5);
+    if (roadWay.position.y < -50) {
+        roadWay.position = ccp(roadWay.position.x ,520);
+    }
+    
+    for(CCSprite *car in enemies){
+        car.position = ccp(car.position.x,car.position.y-3);
+    }
+    
+    i = i++;
+    while ( i >= 30) {
+        for (int j = 1; j<=2; j++) {
+            trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+            trafficPositionY = random() % 465+5;
+            int px = [self randomlane];
+            int px2 = [self randomlane2];
+            trafficCar.position = ccp(px, px2);
+            
+            for(CCSprite *car in enemies){
+                
+                while( CGRectIntersectsRect([car boundingBox], [trafficCar boundingBox]) ) {
+                    px = [self randomlane];
+                    px2 = [self randomlane2];
+                    NSLog(@"x:%i y:%i",px,px2);
+                    trafficCar.position = ccp(px, px2);
+                }
+            }
+            [enemies addObject:trafficCar];
+            
+            [self addChild: trafficCar z:10];
+        }
+        i = i - 60;
+    }
+    
+    for(CCSprite *car in enemies){
+        
+        if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+            NSLog(@"collision  ");
+            CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
+            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+            [myCar setTexture:texture];
+        }
+    }
+    
 }
 
 
+
 -(int) randomlane {
->>>>>>> e345f7131c0a5906634e3293986f51cffbccbfd6
-	
-	
-	
-	-(int) randomlane {
-		
-		int m=(random()%5+1);
-		if (m==1){
-			trafficPositionX=32;
-		}	
-		else if (m==2){
-			trafficPositionX=96;
-		}	
-		else if (m==3){
-			trafficPositionX=160;
-		}	
-		else if (m==4){
-			trafficPositionX=224;
-		}else{
-			trafficPositionX=288;
-		}
-		return trafficPositionX;
-	}	
-	
-	-(int) randomlane2 {
-		int c = (random()%480+1);
-		
-		trafficPositionY = c + 480;
-		return trafficPositionY;
-	}
-	
-	- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-		for (UITouch * touch in touches) {
-			CGPoint location = [self convertTouchToNodeSpace:touch];
-			if (location.x <= 159 && myCar.position.x>50) {
-				
-				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
-			}
-			if (location.x >= 160 && myCar.position.x<270) {
-				myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
-			}
-			//[myCar stopAllActions];
-		}
-	}
-	
-	// on "dealloc" you need to release all your retained objects
-	
-	- (void) dealloc{
-		// in case you have something to dealloc, do it in this method
-		// in this particular example nothing needs to be released.
-		// cocos2d will automatically release all the children (Label)
-		
-		// don't forget to call "super dealloc"
-		[super dealloc];
-	}
-	@end
+    
+    int m=(random()%5+1);
+    if (m==1){
+        trafficPositionX=32;
+    }	
+    else if (m==2){
+        trafficPositionX=96;
+    }	
+    else if (m==3){
+        trafficPositionX=160;
+    }	
+    else if (m==4){
+        trafficPositionX=224;
+    }else{
+        trafficPositionX=288;
+    }
+    return trafficPositionX;
+}	
+
+-(int) randomlane2 {
+    int c = (random()%480+1);
+    
+    trafficPositionY = c + 480;
+    return trafficPositionY;
+}
+
+- (void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    for (UITouch * touch in touches) {
+        CGPoint location = [self convertTouchToNodeSpace:touch];
+        if (location.x <= 159 && myCar.position.x>50) {
+            
+            myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+        }
+        if (location.x >= 160 && myCar.position.x<270) {
+            myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
+        }
+        //[myCar stopAllActions];
+    }
+}
+
+// on "dealloc" you need to release all your retained objects
+
+- (void) dealloc{
+    // in case you have something to dealloc, do it in this method
+    // in this particular example nothing needs to be released.
+    // cocos2d will automatically release all the children (Label)
+    
+    // don't forget to call "super dealloc"
+    [super dealloc];
+}
+@end
