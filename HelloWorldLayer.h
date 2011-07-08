@@ -45,7 +45,7 @@
 	bool hit;
 	int lifeafter;
     BOOL isHost;
-  
+    int randomNumber;
   
   bool multiplayer;
   CCSprite *player2Car;

@@ -297,7 +297,7 @@
   self.connection = gkConnection;
   self.connection.delegate = self;
   multiplayer = true;
-  
+    [self pickHost];
   player2Car=[CCSprite spriteWithFile:@"car_player_2.png"];
   player2Car.position = ccp(100,70);
   [self addChild:player2Car z:10];
@@ -325,7 +325,27 @@
   if( [command isEqualToString:@"you_won"] ){
     [self youWon];
   }
+    if ([command isEqualToString:@"checkHost"]) {
+        [self checkWinner:[[response objectAtIndex:1] intValue]];
+    }
 }
 
+-(void)pickHost{
+    randomNumber=random()%10;
+    [self.connection sendArray:[NSArray arrayWithObjects:[NSString stringWithFormat:@"checkHost"],[NSNumber numberWithInt:randomNumber],nil]];
+}
+     
+     -(void)checkWinner:(int)x{
+         if(x>randomNumber){
+             isHost=TRUE;
+         }
+         else if(x<randomNumber){
+             isHost=FALSE;
+         }
+         else{
+             [self pickHost];
+         }
+         NSLog(@"isHost:%i",isHost);
+     }
 
 	@end
