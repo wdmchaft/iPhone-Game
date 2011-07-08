@@ -51,7 +51,7 @@
 		enemies=[[NSMutableArray alloc] init];
 		lifeafter = 3;
 		life = 3;
-    multiplayer = true;
+    multiplayer = false;
     
 		//creating myCar
     myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
