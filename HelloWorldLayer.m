@@ -72,12 +72,12 @@
 		roadspeed =- 5;
 	}
 	scorecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score: %i", score] fontName:@"Marker Felt" fontSize:20];
-	scorecounter.position =  ccp(50, 50);
+	scorecounter.position =  ccp(50, 15);
 
 	[self addChild:scorecounter z:0];
 	lifecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Life: %i", life] fontName:@"Marker Felt" fontSize:20];
 	
-	lifecounter.position =  ccp(270, 50);
+	lifecounter.position =  ccp(270, 15);
 
 	[self addChild:lifecounter z:0];
   
@@ -181,7 +181,7 @@
 				}
 			}
 		
-			i = i - 70;
+			i = i - 45;
 		}
 		
   }
@@ -258,7 +258,7 @@
 			if (location.x <= 159 && myCar.position.x>50) {
 				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
         if (multiplayer) {
-          [self.connection sendArray:[NSArray arrayWithsObject:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
+          [self.connection sendArray:[NSArray arrayWithObjects:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
         }
 			}
       
