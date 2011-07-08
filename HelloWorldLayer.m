@@ -106,6 +106,9 @@
 	}
 	while ( i >= 30) {
 		for (int j = 1; j<=(3+(0.0013*x)); j++) {
+            if(multiplayer&&!isHost){
+                break;
+            }
 			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			px = [self randomlane];
 			px2 = [self randomlane2];
@@ -122,7 +125,7 @@
 			}
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
-            if(isHost){
+            if(isHost&&multiplayer){
                 [self.connection sendArray:[NSArray arrayWithObjects:@"add_car", NSStringFromCGPoint(trafficCar.position), nil] ];
             }
 
