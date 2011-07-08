@@ -72,14 +72,13 @@
 }
 
 -(void) connected {
+  if (connected) return;
+  connected = true;
+
   CCScene * newScene = [HelloWorldLayer scene];
   HelloWorldLayer *layer =  [[newScene children] objectAtIndex:0];
-  
-//  layer.connection = connection;
-//  layer.connection.delegate = newScene;
-
+  [layer setGameKitConnection:connection];  
 	[[CCDirector sharedDirector] replaceScene:newScene];
-
 }
 
 

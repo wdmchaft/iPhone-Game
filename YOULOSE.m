@@ -31,9 +31,7 @@
 	CCMenu *menu2 = [CCMenu menuWithItems:playagain, nil];
 	menu2.position = CGPointZero;
 	[self addChild:menu2];
-	
-				
-	}
+  }
 	
 	return self;
 }

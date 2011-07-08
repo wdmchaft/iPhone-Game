@@ -45,13 +45,19 @@
 	bool hit;
 	int lifeafter;
   
+  
+  bool multiplayer;
+  CCSprite *player2Car;
+
   GameKitConnector *connection;
 }
 
 @property(retain, nonatomic) GameKitConnector *connection;
-
+-(void)setGameKitConnection:(GameKitConnector*)gkConnection;
 +(CCScene *) scene;
 
 -(int) randomlane;
 -(int) randomlane2;
+
+
 @end

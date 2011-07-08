@@ -51,8 +51,9 @@
 		enemies=[[NSMutableArray alloc] init];
 		lifeafter = 3;
 		life = 3;
+    multiplayer = true;
+    
 		//creating myCar
-
     myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
     myCar.position = ccp(160,70);
     [self addChild:myCar z:10];
@@ -252,11 +253,15 @@
 		for (UITouch * touch in touches) {
 			CGPoint location = [self convertTouchToNodeSpace:touch];
 			if (location.x <= 159 && myCar.position.x>50) {
-				
 				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+          [self.connection sendArray:[NSArray arrayWithObject:NSStringFromCGPoint(myCar.position)] ];
 			}
+      
 			if (location.x >= 160 && myCar.position.x<270) {
 				myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
+        if (multiplayer) {
+          [self.connection sendArray:[NSArray arrayWithObject:NSStringFromCGPoint(myCar.position)] ];
+        }
 			}
 			//[myCar stopAllActions];
 		}
@@ -272,5 +277,32 @@
 		// don't forget to call "super dealloc"
 		[super dealloc];
 	}
+
+-(void)setGameKitConnection:(GameKitConnector*)gkConnection{
+  self.connection = gkConnection;
+  self.connection.delegate = self;
+  multiplayer = true;
+  
+  player2Car=[CCSprite spriteWithFile:@"car_sprite 2.png"];
+  player2Car.position = ccp(100,70);
+  [self addChild:player2Car z:10];
+}
+
+-(void) connectionCancelled {
+  // two player disconnect
+  CCScene * newScene = [MainMenuLayer scene];
+	[[CCDirector sharedDirector] replaceScene:newScene];
+  
+}
+
+-(void) connected { NSLog(@"doing nothing.."); }
+
+-(void) recievedArray:(NSArray*)response {
+  if ([response count] == 1) {
+    //soo...  it's a CGPoint of the car's new x /y positions
+    player2Car.position = CGPointFromString([response objectAtIndex:0]);
+  }
+}
+
 
 	@end

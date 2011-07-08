@@ -28,6 +28,7 @@
 	CCSprite *myCar;
 	CCLabelTTF * welcome;
   
+  bool connected;
   GameKitConnector *connection;
 }
 
