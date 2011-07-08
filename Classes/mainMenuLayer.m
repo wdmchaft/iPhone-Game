@@ -79,10 +79,9 @@
   HelloWorldLayer *layer =  [[newScene children] objectAtIndex:0];
   [layer setGameKitConnection:connection];  
 	[[CCDirector sharedDirector] replaceScene:newScene];
+  
+  
 }
-
-
-
 
 - (void) dealloc
 {

@@ -67,6 +67,7 @@
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
 		609F3B5613C6863D00E534DA /* GameKitConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 609F3B5413C6863D00E534DA /* GameKitConnector.m */; };
 		609F3B5E13C686CB00E534DA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609F3B5D13C686CB00E534DA /* GameKit.framework */; };
+		609F3B6113C6979D00E534DA /* car_player_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 609F3B6013C6979D00E534DA /* car_player_2.png */; };
 		6F42BC1713C5FC8F007D7B4A /* Highway3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
@@ -329,6 +330,7 @@
 		609F3B5513C6863D00E534DA /* GameKitConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitConnector.h; sourceTree = "<group>"; };
 		609F3B5C13C6869500E534DA /* ORLocalNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocalNetworkProtocol.h; sourceTree = "<group>"; };
 		609F3B5D13C686CB00E534DA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		609F3B6013C6979D00E534DA /* car_player_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car_player_2.png; sourceTree = "<group>"; };
 		6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highway3 copy.png"; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -612,9 +614,6 @@
 				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
 				3FDEF6F213C6483700BB568A /* YOULOSE.h */,
 				3FDEF6F313C6483700BB568A /* YOULOSE.m */,
-				609F3B5C13C6869500E534DA /* ORLocalNetworkProtocol.h */,
-				609F3B5413C6863D00E534DA /* GameKitConnector.m */,
-				609F3B5513C6863D00E534DA /* GameKitConnector.h */,
 				3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */,
 				3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */,
 				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
@@ -687,6 +686,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				609F3B6013C6979D00E534DA /* car_player_2.png */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3FD08DC513C5FDA700994D11 /* car_sprite.png */,
 				3FDEF70D13C648B800BB568A /* PlayAgain.png */,
@@ -714,6 +714,9 @@
 		609F3B5F13C689D300E534DA /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				609F3B5C13C6869500E534DA /* ORLocalNetworkProtocol.h */,
+				609F3B5413C6863D00E534DA /* GameKitConnector.m */,
+				609F3B5513C6863D00E534DA /* GameKitConnector.h */,
 				E0F80F5E120A0182005866B8 /* RootViewController.h */,
 				E0F80F5F120A0182005866B8 /* RootViewController.m */,
 				1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */,
@@ -1167,6 +1170,7 @@
 				3FDEF6D913C646EE00BB568A /* Default.png in Resources */,
 				3FDEF70C13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png in Resources */,
 				3FDEF70E13C648B800BB568A /* PlayAgain.png in Resources */,
+				609F3B6113C6979D00E534DA /* car_player_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

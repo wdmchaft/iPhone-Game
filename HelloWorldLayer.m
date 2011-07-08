@@ -90,7 +90,7 @@
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
-		score++;
+        score++;
     }
     
     for(CCSprite *car in enemies){
@@ -189,16 +189,19 @@
     x++;
     for(CCSprite *car in enemies){
           if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-              NSLog(@"collision  ");
-              CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
-              AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-            roadspeed=0;
-            enemyspeed=3;
-            x=0;
-            i=-180; //time before cars spawn again
+            if(multiplayer){
+              [self.connection sendArray:[NSArray arrayWithObject:@"car_crash"]];
+            }
+            
+            NSLog(@"collision  ");
+            CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
             [myCar setTexture:texture];
+            [self crash];
             
         if(lifeafter < 0){
+          if (multiplayer) {
+            [self.connection sendArray:[NSArray arrayWithObject:@"game_over"]];
+          }
           CCScene * newScene = [YOULOSE scene];
           [[CCDirector sharedDirector] replaceScene:newScene];
           NSLog(@"Lost");
@@ -254,19 +257,29 @@
 			CGPoint location = [self convertTouchToNodeSpace:touch];
 			if (location.x <= 159 && myCar.position.x>50) {
 				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
-          [self.connection sendArray:[NSArray arrayWithObject:NSStringFromCGPoint(myCar.position)] ];
+          [self.connection sendArray:[NSArray arrayWithsObject:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
 			}
       
 			if (location.x >= 160 && myCar.position.x<270) {
 				myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
         if (multiplayer) {
-          [self.connection sendArray:[NSArray arrayWithObject:NSStringFromCGPoint(myCar.position)] ];
+          [self.connection sendArray:[NSArray arrayWithObjects:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
         }
 			}
 			//[myCar stopAllActions];
 		}
 	}
-	
+-(void)youWon{
+  //do something here
+}
+
+-(void) crash{  
+  AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+  roadspeed=0;
+  enemyspeed=3;
+  x=0;
+  i=-180; //time before cars spawn again
+}
 	// on "dealloc" you need to release all your retained objects
 	
 	- (void) dealloc{
@@ -283,7 +296,7 @@
   self.connection.delegate = self;
   multiplayer = true;
   
-  player2Car=[CCSprite spriteWithFile:@"car_sprite 2.png"];
+  player2Car=[CCSprite spriteWithFile:@"car_player_2.png"];
   player2Car.position = ccp(100,70);
   [self addChild:player2Car z:10];
 }
@@ -298,9 +311,17 @@
 -(void) connected { NSLog(@"doing nothing.."); }
 
 -(void) recievedArray:(NSArray*)response {
-  if ([response count] == 1) {
-    //soo...  it's a CGPoint of the car's new x /y positions
-    player2Car.position = CGPointFromString([response objectAtIndex:0]);
+  //first object is always command
+  NSString * command =  [response objectAtIndex:0];
+  if ( [command isEqualToString:@"car_pos"] ) {
+    player2Car.position = CGPointFromString([response objectAtIndex:1]);
+  }
+  
+  if( [command isEqualToString:@"car_crash"] ){
+    [self crash];
+  }
+  if( [command isEqualToString:@"you_won"] ){
+    [self youWon];
   }
 }
 

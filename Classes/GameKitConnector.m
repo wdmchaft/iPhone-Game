@@ -12,7 +12,7 @@
 
 > Place this in the header file
  (at the top)
- #import "GameKitController";
+ #import "GameKitConnector.h";
  
  In the class definition
  GameKitConnector * connection;
@@ -83,7 +83,6 @@ connection.delegate = self;
  */
 - (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)newSession {
   
-  NSLog(@"DID CONNECT TO PEER");
 	// Use a retaining property to take ownership of the session.
   self.session = newSession;
 	// Assumes our object will also become the session's delegate.
@@ -111,7 +110,6 @@ connection.delegate = self;
 }
 
 -(void)sendArray:(NSArray *)array{
-    NSLog(@"DID SEND DATA");
     NSError *error;
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:array];
     [self.session sendDataToAllPeers:data withDataMode:GKSendDataReliable error:&error];
