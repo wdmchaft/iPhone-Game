@@ -73,6 +73,9 @@
 	}
 	scorecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score: %i", score] fontName:@"Marker Felt" fontSize:20];
 	scorecounter.position =  ccp(50, 15);
+    
+    friendcounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Friend: %i", score] fontName:@"Marker Felt" fontSize:20];
+	friendcounter.position =  ccp(50, 30);
 
 	[self addChild:scorecounter z:0];
 	lifecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Life: %i", life] fontName:@"Marker Felt" fontSize:20];
@@ -85,12 +88,17 @@
 }
 
 -(void)nextFrame:(ccTime)dt{
+    if(x>120){
+        score++;
+    }
+    [self.connection sendArray:[NSArray arrayWithObjects:[NSString stringWithFormat:@"score"],[NSNumber numberWithInt:score],nil]];
+    
 	lifecounter.string = [NSString stringWithFormat:@"Life: %i", lifeafter];
 	scorecounter.string = [NSString stringWithFormat:@"Score: %i", score];
+    friendcounter.string = [NSString stringWithFormat:@"Friend: %i", friendscore];
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
         roadWay.position = ccp(roadWay.position.x ,520);
-        score++;
     }
     
     for(CCSprite *car in enemies){
@@ -105,9 +113,6 @@
 	}
 	while ( i >= 30) {
 		for (int j = 1; j<=(3+(0.0013*x)); j++) {
-            if(multiplayer&&!isHost){
-                i=i-45;
-            }
 			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			px = [self randomlane];
 			px2 = [self randomlane2];
@@ -124,7 +129,6 @@
 			}
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
-
 		}
 		//hopefully our five car not spawning together code
 		for(CCSprite *car in enemies){
@@ -184,9 +188,7 @@
 					trafficCar.position=ccp(px,px2);
 				}
 			}
-            if(isHost&&multiplayer){
-                [self.connection sendArray:[NSArray arrayWithObjects:@"add_car", NSStringFromCGPoint(trafficCar.position), nil] ];
-            }
+		
 			i = i - 45;
 		}
 		
@@ -263,16 +265,11 @@
 			CGPoint location = [self convertTouchToNodeSpace:touch];
 			if (location.x <= 159 && myCar.position.x>50) {
 				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
-        if (multiplayer) {
-          [self.connection sendArray:[NSArray arrayWithObjects:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
-        }
 			}
       
 			if (location.x >= 160 && myCar.position.x<270) {
 				myCar.position=ccp(myCar.position.x+64,	myCar.position.y);		
-        if (multiplayer) {
-          [self.connection sendArray:[NSArray arrayWithObjects:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
-        }
+
 			}
 			//[myCar stopAllActions];
 		}
@@ -303,7 +300,7 @@
   self.connection = gkConnection;
   self.connection.delegate = self;
   multiplayer = true;
-    [self pickHost];
+  
   player2Car=[CCSprite spriteWithFile:@"car_player_2.png"];
   player2Car.position = ccp(100,70);
   [self addChild:player2Car z:10];
@@ -321,43 +318,15 @@
 -(void) recievedArray:(NSArray*)response {
   //first object is always command
   NSString * command =  [response objectAtIndex:0];
-  if ( [command isEqualToString:@"car_pos"] ) {
-    player2Car.position = CGPointFromString([response objectAtIndex:1]);
-  }
+
   
-  if( [command isEqualToString:@"car_crash"] ){
-    [self crash];
-  }
   if( [command isEqualToString:@"you_won"] ){
     [self youWon];
   }
-    if ([command isEqualToString:@"checkHost"]) {
-        [self checkWinner:[[response objectAtIndex:1] intValue]];
-    }
-    if([command isEqualToString:@"add_car"]){
-        trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-        trafficCar.position = CGPointFromString([response objectAtIndex:1]);
-        [enemies addObject:trafficCar];
-        [self addChild: trafficCar z:10];
+    if([command isEqualToString:@"score"]){
+        friendscore=[[response objectAtIndex:1] intValue];
     }
 }
 
--(void)pickHost{
-    randomNumber=random()%10;
-    [self.connection sendArray:[NSArray arrayWithObjects:[NSString stringWithFormat:@"checkHost"],[NSNumber numberWithInt:randomNumber],nil]];
-}
-     
-     -(void)checkWinner:(int)x{
-         if(x>randomNumber){
-             isHost=TRUE;
-         }
-         else if(x<randomNumber){
-             isHost=FALSE;
-         }
-         else{
-             [self pickHost];
-         }
-         NSLog(@"isHost:%i",isHost);
-     }
 
 	@end

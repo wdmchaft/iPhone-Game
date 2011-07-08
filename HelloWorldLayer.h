@@ -41,11 +41,13 @@
 	int px2;
 	int score;
 	CCLabelTTF *scorecounter;
+    CCLabelTTF *friendcounter;
 	CCLabelTTF *lifecounter;
 	bool hit;
 	int lifeafter;
     BOOL isHost;
     int randomNumber;
+    int friendscore;
   
   bool multiplayer;
   CCSprite *player2Car;
