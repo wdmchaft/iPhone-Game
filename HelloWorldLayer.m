@@ -257,7 +257,9 @@
 			CGPoint location = [self convertTouchToNodeSpace:touch];
 			if (location.x <= 159 && myCar.position.x>50) {
 				myCar.position=ccp(myCar.position.x-64,myCar.position.y);
+        if (multiplayer) {
           [self.connection sendArray:[NSArray arrayWithsObject:@"car_pos", NSStringFromCGPoint(myCar.position), nil] ];
+        }
 			}
       
 			if (location.x >= 160 && myCar.position.x<270) {
