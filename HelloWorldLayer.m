@@ -122,6 +122,10 @@
 			}
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
+            if(isHost){
+                [self.connection sendArray:[NSArray arrayWithObjects:@"add_car", NSStringFromCGPoint(trafficCar.position), nil] ];
+            }
+
 		}
 		//hopefully our five car not spawning together code
 		for(CCSprite *car in enemies){
@@ -329,6 +333,17 @@
   if( [command isEqualToString:@"you_won"] ){
     [self youWon];
   }
+    if([command isEqualToString:@"is_host"]){
+        isHost=true;
+    }
+    if([command isEqualToString:@"add_car"]){
+        trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
+
+        trafficCar.position = CGPointFromString([response objectAtIndex:1]);
+        [enemies addObject:trafficCar];
+        [self addChild: trafficCar z:10];
+
+    }
 }
 
 
