@@ -39,6 +39,8 @@
 	int score;
 	CCLabelTTF *scorecounter;
 	CCLabelTTF *lifecounter;
+	bool hit;
+	int lifeafter;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child

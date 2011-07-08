@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>3F89E30713C65BDD00C6576E</string>
+						<string>3F89E32C13C6815700C6576E</string>
 						<key>history</key>
 						<array>
 							<string>3F89E2C213C6547600C6576E</string>
@@ -316,7 +316,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -340,7 +340,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>122 137 1116 862 0 0 1280 1002 </string>
+						<string>489 120 1116 862 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -370,18 +370,19 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3F89E30613C65BDD00C6576E</string>
+										<string>3F89E32B13C6815700C6576E</string>
 										<key>history</key>
 										<array>
 											<string>3F89E2B613C6540800C6576E</string>
 											<string>3F89E2C513C654D700C6576E</string>
 											<string>3F89E2C613C654D700C6576E</string>
 											<string>3F89E2C713C654D700C6576E</string>
-											<string>3F89E2F713C65A5C00C6576E</string>
 											<string>3F89E2F813C65A5C00C6576E</string>
 											<string>3F89E2F913C65A5C00C6576E</string>
-											<string>3F89E30413C65BDD00C6576E</string>
-											<string>3F89E30513C65BDD00C6576E</string>
+											<string>3F89E31B13C6613600C6576E</string>
+											<string>3F89E32413C6804F00C6576E</string>
+											<string>3F89E32A13C6815700C6576E</string>
+											<string>3F89E32313C6804F00C6576E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -395,7 +396,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {908, 559}}</string>
 								<key>RubberWindowFrame</key>
-								<string>122 137 1116 862 0 0 1280 1002 </string>
+								<string>489 120 1116 862 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -415,7 +416,7 @@
 								<key>Frame</key>
 								<string>{{0, 564}, {908, 257}}</string>
 								<key>RubberWindowFrame</key>
-								<string>122 137 1116 862 0 0 1280 1002 </string>
+								<string>489 120 1116 862 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -584,11 +585,10 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>3FD08DA213C5FD4400994D11</string>
-		<string>3F89E2CA13C654D700C6576E</string>
 		<string>/Users/Student/iPhone-Game/RacingGame.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>122 137 1116 862 0 0 1280 1002 </string>
+	<string>489 120 1116 862 0 0 1280 1002 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -618,7 +618,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {935, 420}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 183 935 702 0 0 1280 1002 </string>
+								<string>269 183 935 702 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -644,7 +644,7 @@
 								<key>Frame</key>
 								<string>{{0, 425}, {935, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>267 183 935 702 0 0 1280 1002 </string>
+								<string>269 183 935 702 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -676,7 +676,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>267 183 935 702 0 0 1280 1002 </string>
+			<string>269 183 935 702 0 0 1280 1002 </string>
 			<key>WindowToolGUID</key>
 			<string>3FD08DA213C5FD4400994D11</string>
 			<key>WindowToolIsVisible</key>

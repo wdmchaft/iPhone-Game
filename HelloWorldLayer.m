@@ -52,7 +52,7 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		enemies=[[NSMutableArray alloc] init];
-		
+		lifeafter = 3;
 		life = 3;
 		//creating myCar
 		
@@ -90,7 +90,7 @@
 }
 
 -(void)nextFrame:(ccTime)dt{
-	lifecounter.string = [NSString stringWithFormat:@"Life: %i", life];
+	lifecounter.string = [NSString stringWithFormat:@"Life: %i", lifeafter];
 	scorecounter.string = [NSString stringWithFormat:@"Score: %i", score];
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
@@ -131,57 +131,57 @@
 		for(CCSprite *car in enemies){
 			
 			if((trafficCar.position.x==32)&&(car.position.x==96)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==96)&&(car.position.x==32)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==96)&&(car.position.x==160)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==160)&&(car.position.x==96)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==160)&&(car.position.x==224)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==224)&&(car.position.x==160)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==224)&&(car.position.x==228)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
 			
 			if((trafficCar.position.x==288)&&(car.position.x==224)){
-				if(abs(trafficCar.position.y-car.position.y)<=40){
-					px2+=40;
+				if(abs(trafficCar.position.y-car.position.y)<=80){
+					px2+=80;
 					trafficCar.position=ccp(px,px2);
 				}
 			}
@@ -202,14 +202,16 @@
 			x=0;
 			i=-180; //time before cars spawn again
             [myCar setTexture:texture];
-			life--;
-			NSLog(@"%i", life);
-			if(life==0){
+			if(lifeafter==0){
 				CCScene * newScene = [YOULOSE scene];
 				[[CCDirector sharedDirector] replaceScene:newScene];
 				NSLog(@"Lost");
 				CCLayer *layer=[newScene getChildByTag:2];
 				[layer loser:score];
+				lifeafter--;
+				if(hit == true){
+					life -= 1;
+				}
 				
 			}
         }
@@ -292,4 +294,21 @@
 		// don't forget to call "super dealloc"
 		[super dealloc];
 	}
+
+-(BOOL) ccTouchesBegan:(UITouch *)touches withEvent:(UIEvent *)event
+{
+	touches = touch;
+	[self spriteCheck: touches;
+	 return YES;
+}
+	 
+	 -(void) spriteCheck: (UITouch *)touchLocation{
+		 CGPoint locationt=[touchLocation locationInView:
+							[touchLocation view]];
+		 locationt = [[Director sharedDirector]
+					  converCoordinate:locationt];
+		 if (CGRectContainsPoint(pauseButtonRect, locationt)) {
+			 [self pauseButton];
+		 }
+	 }	 
 	@end
