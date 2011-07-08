@@ -37,11 +37,11 @@
 	if( (self=[super init])) {
 		
 		CCMenuItem *item = [CCMenuItemImage itemFromNormalImage:@"BUTTON-FOR-THE-OBESE-KID.png" selectedImage:@"BUTTON-FOR-THE-OBESE-KID.png" target: self selector:@selector(startGame:)];
-		item.position = ccp(160, 150);
+		item.position = ccp(155, 300);
 		
     
-    CCMenuItem *item2 = [CCMenuItemImage itemFromNormalImage:@"Cheats.png" selectedImage:@"Cheats.png" target: self selector:@selector(start2Player:)];
-		item.position = ccp(60, 250);
+    CCMenuItem *item2 = [CCMenuItemImage itemFromNormalImage:@"Multiplayer.png" selectedImage:@"Multiplayer.png" target: self selector:@selector(start2Player:)];
+		item2.position = ccp(155, 75);
 
     
 		CCMenu *menu = [CCMenu menuWithItems:item, item2, nil];
@@ -49,7 +49,7 @@
 		[self addChild:menu];
 		CCLabelTTF *welcome = [CCLabelTTF labelWithString:@"Welcome to Traffic" fontName:@"Marker Felt" fontSize:40];
 		// position the label on the center of the screen
-		welcome.position =  ccp(160, 300);
+		welcome.position =  ccp(160, 455);
 		
 		// add the label as a child to this Layer
 		[self addChild: welcome];

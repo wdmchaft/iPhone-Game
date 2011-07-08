@@ -18,6 +18,9 @@
 		activeExecutable = 3FDEF75613C64C8700BB568A /* RacingGame */;
 		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* RacingGame */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* RacingGame */,
+		);
 		codeSenseManager = 3FDEF76313C64C9300BB568A /* Code sense */;
 		executables = (
 			3FDEF75613C64C8700BB568A /* RacingGame */,
@@ -49,6 +52,13 @@
 			PBXWorkspaceStateSaveDate = 331823920;
 		};
 		perUserProjectItems = {
+			3F5BDAAB13C73D1800F689E9 /* PBXBookmark */ = 3F5BDAAB13C73D1800F689E9 /* PBXBookmark */;
+			3F5BDAAC13C73D1800F689E9 /* PBXBookmark */ = 3F5BDAAC13C73D1800F689E9 /* PBXBookmark */;
+			3F5BDAAD13C73D1800F689E9 /* PBXTextBookmark */ = 3F5BDAAD13C73D1800F689E9 /* PBXTextBookmark */;
+			3F5BDAAE13C73D1800F689E9 /* PBXBookmark */ = 3F5BDAAE13C73D1800F689E9 /* PBXBookmark */;
+			3F5BDAAF13C73D1800F689E9 /* PBXTextBookmark */ = 3F5BDAAF13C73D1800F689E9 /* PBXTextBookmark */;
+			3F5BDAB013C73D1800F689E9 /* PBXBookmark */ = 3F5BDAB013C73D1800F689E9 /* PBXBookmark */;
+			3F5BDAB113C73D1800F689E9 /* PBXBookmark */ = 3F5BDAB113C73D1800F689E9 /* PBXBookmark */;
 			3F89E29F13C6531300C6576E = 3F89E29F13C6531300C6576E /* PBXTextBookmark */;
 			3F89E2A013C6531300C6576E = 3F89E2A013C6531300C6576E /* PBXTextBookmark */;
 			3F89E2AD13C6536D00C6576E = 3F89E2AD13C6536D00C6576E /* PBXTextBookmark */;
@@ -134,6 +144,46 @@
 			sepNavVisRange = "{7402, 1126}";
 			sepNavWindowFrame = "{{38, 70}, {1239, 906}}";
 		};
+	};
+	3F5BDAAB13C73D1800F689E9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3FDEF70B13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png */;
+	};
+	3F5BDAAC13C73D1800F689E9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3F5BDA8F13C73C9300F689E9 /* Multiplayer.png */;
+	};
+	3F5BDAAD13C73D1800F689E9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */;
+		name = "mainMenuLayer.m: 52";
+		rLen = 0;
+		rLoc = 1546;
+		rType = 0;
+		vrLen = 1200;
+		vrLoc = 766;
+	};
+	3F5BDAAE13C73D1800F689E9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3FD08E8C13C6261E00994D11 /* car_sprite 2.png */;
+	};
+	3F5BDAAF13C73D1800F689E9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E02BB762126CC1E0006E46A2 /* iTunesArtwork */;
+		name = "iTunesArtwork: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1960;
+		vrLoc = 0;
+	};
+	3F5BDAB013C73D1800F689E9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3FDEF6D813C646EE00BB568A /* Default.png */;
+	};
+	3F5BDAB113C73D1800F689E9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 3FDEF6D813C646EE00BB568A /* Default.png */;
 	};
 	3F89E29F13C6531300C6576E /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -356,9 +406,9 @@
 		fRef = 3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */;
 		name = "mainMenuLayer.m: 61";
 		rLen = 0;
-		rLoc = 1761;
+		rLoc = 1772;
 		rType = 0;
-		vrLen = 1024;
+		vrLen = 712;
 		vrLoc = 1809;
 	};
 	3F89E2FA13C65A5C00C6576E /* PBXTextBookmark */ = {
@@ -658,9 +708,9 @@
 	};
 	3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1321, 1365}}";
-			sepNavSelRange = "{1761, 0}";
-			sepNavVisRange = "{1809, 1024}";
+			sepNavIntBoundsRect = "{{0, 0}, {1321, 1261}}";
+			sepNavSelRange = "{1546, 0}";
+			sepNavVisRange = "{766, 1200}";
 		};
 	};
 	3FDEF6F213C6483700BB568A /* YOULOSE.h */ = {
@@ -757,6 +807,13 @@
 	};
 	506EE05D10304ED200A389B3 /* cocos2d libraries */ = {
 		activeExec = 0;
+	};
+	E02BB762126CC1E0006E46A2 /* iTunesArtwork */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2245, 6697}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1960}";
+		};
 	};
 	E0F80F5F120A0182005866B8 /* RootViewController.m */ = {
 		uiCtxt = {

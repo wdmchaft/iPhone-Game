@@ -18,6 +18,7 @@
 		3F0CAB3313C5EF1C009FB188 /* Explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0CAB3213C5EF1C009FB188 /* Explosion.png */; };
 		3F24BCBE13C4E7E200A66D09 /* Highway3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F24BCBD13C4E7E200A66D09 /* Highway3.png */; };
 		3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */; };
+		3F5BDA9013C73C9300F689E9 /* Multiplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F5BDA8F13C73C9300F689E9 /* Multiplayer.png */; };
 		3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */; };
 		3F8E4FE813C4EC6F00CB3A00 /* Cheats.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */; };
 		3F8E4FEA13C4EC8100CB3A00 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F8E4FE913C4EC8100CB3A00 /* Button.png */; };
@@ -281,6 +282,7 @@
 		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
 		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldLayer.h; path = ../HelloWorldLayer.h; sourceTree = "<group>"; };
 		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelloWorldLayer.m; path = ../HelloWorldLayer.m; sourceTree = "<group>"; };
+		3F5BDA8F13C73C9300F689E9 /* Multiplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Multiplayer.png; sourceTree = "<group>"; };
 		3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenuLayer.h; sourceTree = "<group>"; };
 		3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainMenuLayer.m; sourceTree = "<group>"; };
 		3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cheats.png; sourceTree = "<group>"; };
@@ -686,6 +688,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3F5BDA8F13C73C9300F689E9 /* Multiplayer.png */,
 				609F3B6013C6979D00E534DA /* car_player_2.png */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				3FD08DC513C5FDA700994D11 /* car_sprite.png */,
@@ -1171,6 +1174,7 @@
 				3FDEF70C13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png in Resources */,
 				3FDEF70E13C648B800BB568A /* PlayAgain.png in Resources */,
 				609F3B6113C6979D00E534DA /* car_player_2.png in Resources */,
+				3F5BDA9013C73C9300F689E9 /* Multiplayer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
