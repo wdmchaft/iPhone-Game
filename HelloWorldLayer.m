@@ -95,6 +95,7 @@
     
 	lifecounter.string = [NSString stringWithFormat:@"Life: %i", lifeafter];
 	scorecounter.string = [NSString stringWithFormat:@"Score: %i", score];
+    NSLog(@"%i",friendscore);
     friendcounter.string = [NSString stringWithFormat:@"Friend: %i", friendscore];
     roadWay.position = ccp(roadWay.position.x, roadWay.position.y +(-0.0019*x)+roadspeed);
     if (roadWay.position.y < -50) {
