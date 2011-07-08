@@ -59,6 +59,7 @@
 
 -(int) randomlane;
 -(int) randomlane2;
+-(void)checkWinner:(int)x;
 
 
 @end
