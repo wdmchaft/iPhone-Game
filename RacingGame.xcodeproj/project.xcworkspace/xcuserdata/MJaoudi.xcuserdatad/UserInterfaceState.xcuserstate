@@ -2810,9 +2810,9 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>331827740.60826099</real>
-		<string>{2903, 865}</string>
-		<string>{3638, 0}</string>
+		<real>331827863.89374399</real>
+		<string>{2903, 862}</string>
+		<string>{3094, 0}</string>
 		<string>-nextFrame:</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
@@ -11776,9 +11776,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>331827740.604985</real>
-		<string>{2903, 865}</string>
-		<string>{3638, 0}</string>
+		<real>331827863.89021403</real>
+		<string>{2903, 862}</string>
+		<string>{3094, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -12286,7 +12286,7 @@
 				<integer>879</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>331827736.14972401</real>
+			<real>331827859.58237201</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -12297,7 +12297,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 10:22 AM</string>
+		<string>Today at 10:24 AM</string>
 		<integer>106</integer>
 		<string>cocos2d libraries</string>
 		<dict>

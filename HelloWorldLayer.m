@@ -52,7 +52,6 @@
 		lifeafter = 3;
 		life = 3;
     multiplayer = false;
-        isHost=false;
     
 		//creating myCar
     myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
@@ -106,9 +105,6 @@
 	}
 	while ( i >= 30) {
 		for (int j = 1; j<=(3+(0.0013*x)); j++) {
-            if(multiplayer&&!isHost){
-                break;
-            }
 			trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
 			px = [self randomlane];
 			px2 = [self randomlane2];
@@ -125,10 +121,6 @@
 			}
 			[enemies addObject:trafficCar];
 			[self addChild: trafficCar z:10];
-            if(isHost&&multiplayer){
-                [self.connection sendArray:[NSArray arrayWithObjects:@"add_car", NSStringFromCGPoint(trafficCar.position), nil] ];
-            }
-
 		}
 		//hopefully our five car not spawning together code
 		for(CCSprite *car in enemies){
@@ -305,9 +297,6 @@
   self.connection = gkConnection;
   self.connection.delegate = self;
   multiplayer = true;
-    if(!isHost){
-        [self.connection sendArray:[NSArray arrayWithObject:@"set_host"]];
-    }
   
   player2Car=[CCSprite spriteWithFile:@"car_player_2.png"];
   player2Car.position = ccp(100,70);
@@ -336,17 +325,6 @@
   if( [command isEqualToString:@"you_won"] ){
     [self youWon];
   }
-    if([command isEqualToString:@"is_host"]){
-        isHost=true;
-    }
-    if([command isEqualToString:@"add_car"]){
-        trafficCar = [CCSprite spriteWithFile:@"Enemy-Cars.png"];
-
-        trafficCar.position = CGPointFromString([response objectAtIndex:1]);
-        [enemies addObject:trafficCar];
-        [self addChild: trafficCar z:10];
-
-    }
 }
 
 
