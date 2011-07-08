@@ -15,19 +15,15 @@
 	
 		return scene;
 }
--(id) init
-{	if( (self=[super init])) {
-		
-				
-		
-
-		CCLabelTTF *byebye = [CCLabelTTF labelWithString:@"GAME" fontName:@"Marker Felt" fontSize:72];
-		// position the label on the center of the screen
-		byebye.position =  ccp(160, 240);
+-(id) init {
+	if( (self=[super init])) {
+  CCLabelTTF *byebye = [CCLabelTTF labelWithString:@"GAME" fontName:@"Marker Felt" fontSize:72];
+  byebye.position =  ccp(160, 240);
+    
 	CCLabelTTF *byebye2 = [CCLabelTTF labelWithString:@"OVER" fontName:@"Marker Felt" fontSize:72];
-	// add the label as a child to this Layer
 	byebye2.position = ccp(160, 150);
-		[self addChild: byebye];
+    
+  [self addChild: byebye];
 	[self addChild:byebye2];
 	CCMenuItem *playagain = [CCMenuItemImage itemFromNormalImage:@"PlayAgain.png" selectedImage:@"PlayAgain.png" target: self selector:@selector(restartGame:)];
 	playagain.position = ccp(160, 30);

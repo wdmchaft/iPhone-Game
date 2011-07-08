@@ -65,6 +65,8 @@
 		50F41332106926B2002A0D5E /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F4130F106926B2002A0D5E /* ZFont.h */; };
 		50F41333106926B2002A0D5E /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F41310106926B2002A0D5E /* ZFont.m */; };
 		50F414F11069373D002A0D5E /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F414ED1069373D002A0D5E /* fps_images.png */; };
+		609F3B5613C6863D00E534DA /* GameKitConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 609F3B5413C6863D00E534DA /* GameKitConnector.m */; };
+		609F3B5E13C686CB00E534DA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609F3B5D13C686CB00E534DA /* GameKit.framework */; };
 		6F42BC1713C5FC8F007D7B4A /* Highway3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */; };
 		DC6640030F83B3EA000B3E49 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */; };
 		DC6640050F83B3EA000B3E49 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6640040F83B3EA000B3E49 /* OpenAL.framework */; };
@@ -276,8 +278,8 @@
 		3F0CAABC13C545CA009FB188 /* Collision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Collision.png; sourceTree = "<group>"; };
 		3F0CAB3213C5EF1C009FB188 /* Explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Explosion.png; path = ../Explosion.png; sourceTree = "<group>"; };
 		3F24BCBD13C4E7E200A66D09 /* Highway3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Highway3.png; path = ../Highway3.png; sourceTree = "<group>"; };
-		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelloWorldLayer.h; path = ../HelloWorldLayer.h; sourceTree = "<group>"; };
+		3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelloWorldLayer.m; path = ../HelloWorldLayer.m; sourceTree = "<group>"; };
 		3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainMenuLayer.h; sourceTree = "<group>"; };
 		3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainMenuLayer.m; sourceTree = "<group>"; };
 		3F8E4FE713C4EC6F00CB3A00 /* Cheats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cheats.png; sourceTree = "<group>"; };
@@ -286,8 +288,8 @@
 		3FD08E8C13C6261E00994D11 /* car_sprite 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_sprite 2.png"; sourceTree = "<group>"; };
 		3FD08ECA13C6290400994D11 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		3FDEF6D813C646EE00BB568A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		3FDEF6F213C6483700BB568A /* YOULOSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YOULOSE.h; sourceTree = "<group>"; };
-		3FDEF6F313C6483700BB568A /* YOULOSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YOULOSE.m; sourceTree = "<group>"; };
+		3FDEF6F213C6483700BB568A /* YOULOSE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YOULOSE.h; path = ../YOULOSE.h; sourceTree = "<group>"; };
+		3FDEF6F313C6483700BB568A /* YOULOSE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YOULOSE.m; path = ../YOULOSE.m; sourceTree = "<group>"; };
 		3FDEF70B13C648A600BB568A /* BUTTON-FOR-THE-OBESE-KID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BUTTON-FOR-THE-OBESE-KID.png"; path = "../BUTTON-FOR-THE-OBESE-KID.png"; sourceTree = "<group>"; };
 		3FDEF70D13C648B800BB568A /* PlayAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayAgain.png; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
@@ -296,7 +298,7 @@
 		504DFBCB10AF12E9006D82FE /* CLScoreServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerRequest.m; sourceTree = "<group>"; };
 		504DFBCC10AF12E9006D82FE /* cocoslive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoslive.h; sourceTree = "<group>"; };
 		504DFBCD10AF12E9006D82FE /* cocoslive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoslive.m; sourceTree = "<group>"; };
-		504DFC6810AF1739006D82FE /* LICENSE.cocos2d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.cocos2d; sourceTree = "<group>"; };
+		504DFC6810AF1739006D82FE /* LICENSE.cocos2d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.cocos2d; path = ../LICENSE.cocos2d; sourceTree = "<group>"; };
 		504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.cocosdenshion; sourceTree = "<group>"; };
 		50674850107A3AF30090963A /* ZAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedString.h; sourceTree = "<group>"; };
 		50674851107A3AF30090963A /* ZAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAttributedString.m; sourceTree = "<group>"; };
@@ -323,6 +325,10 @@
 		50F41310106926B2002A0D5E /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
 		50F414ED1069373D002A0D5E /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fps_images.png; sourceTree = "<group>"; };
 		50F414EF1069373D002A0D5E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609F3B5413C6863D00E534DA /* GameKitConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitConnector.m; sourceTree = "<group>"; };
+		609F3B5513C6863D00E534DA /* GameKitConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitConnector.h; sourceTree = "<group>"; };
+		609F3B5C13C6869500E534DA /* ORLocalNetworkProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocalNetworkProtocol.h; sourceTree = "<group>"; };
+		609F3B5D13C686CB00E534DA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highway3 copy.png"; sourceTree = "<group>"; };
 		DC6640020F83B3EA000B3E49 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DC6640040F83B3EA000B3E49 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -517,6 +523,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609F3B5E13C686CB00E534DA /* GameKit.framework in Frameworks */,
 				DCCBF1B70F6022AE0040855A /* CoreGraphics.framework in Frameworks */,
 				DCCBF1B90F6022AE0040855A /* Foundation.framework in Frameworks */,
 				DCCBF1BB0F6022AE0040855A /* OpenGLES.framework in Frameworks */,
@@ -560,11 +567,6 @@
 			isa = PBXGroup;
 			children = (
 				6F42BC1613C5FC8F007D7B4A /* Highway3 copy.png */,
-				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
-				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
-				3FDEF6F213C6483700BB568A /* YOULOSE.h */,
-				3FDEF6F313C6483700BB568A /* YOULOSE.m */,
-				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 				504DFC6910AF1739006D82FE /* LICENSE.cocosdenshion */,
 				506EDAA3102F461B00A389B3 /* cocos2d Sources */,
 				2D500B1D0D5A766B00DBA0E3 /* Classes */,
@@ -588,6 +590,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				609F3B5D13C686CB00E534DA /* GameKit.framework */,
 				DCCBF1B60F6022AE0040855A /* CoreGraphics.framework */,
 				DCCBF1B80F6022AE0040855A /* Foundation.framework */,
 				DCCBF1BA0F6022AE0040855A /* OpenGLES.framework */,
@@ -604,13 +607,17 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				609F3B5F13C689D300E534DA /* Framework */,
+				3F3ABE9D13C4DEE6003A8D20 /* HelloWorldLayer.h */,
+				3F5735AD13C4B963001C19F7 /* HelloWorldLayer.m */,
+				3FDEF6F213C6483700BB568A /* YOULOSE.h */,
+				3FDEF6F313C6483700BB568A /* YOULOSE.m */,
+				609F3B5C13C6869500E534DA /* ORLocalNetworkProtocol.h */,
+				609F3B5413C6863D00E534DA /* GameKitConnector.m */,
+				609F3B5513C6863D00E534DA /* GameKitConnector.h */,
 				3F8E4FDC13C4EAFD00CB3A00 /* mainMenuLayer.h */,
 				3F8E4FDD13C4EAFD00CB3A00 /* mainMenuLayer.m */,
-				E0F80F5D120A0182005866B8 /* GameConfig.h */,
-				E0F80F5E120A0182005866B8 /* RootViewController.h */,
-				E0F80F5F120A0182005866B8 /* RootViewController.m */,
-				1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */,
-				1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */,
+				504DFC6810AF1739006D82FE /* LICENSE.cocos2d */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -702,6 +709,18 @@
 				50F414EF1069373D002A0D5E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		609F3B5F13C689D300E534DA /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E0F80F5E120A0182005866B8 /* RootViewController.h */,
+				E0F80F5F120A0182005866B8 /* RootViewController.m */,
+				1F3B9A2C0EF2145700286867 /* RacingGameAppDelegate.h */,
+				1F3B9A2B0EF2145700286867 /* RacingGameAppDelegate.m */,
+				E0F80F5D120A0182005866B8 /* GameConfig.h */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 		E02BB764126CC223006E46A2 /* cocos2d */ = {
@@ -1164,6 +1183,7 @@
 				3F5735AF13C4B963001C19F7 /* HelloWorldLayer.m in Sources */,
 				3F8E4FDE13C4EAFD00CB3A00 /* mainMenuLayer.m in Sources */,
 				3FDEF6F413C6483700BB568A /* YOULOSE.m in Sources */,
+				609F3B5613C6863D00E534DA /* GameKitConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1310,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RacingGame_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Resources/Info.plist;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1312,6 +1333,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = RacingGame_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = Resources/Info.plist;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (

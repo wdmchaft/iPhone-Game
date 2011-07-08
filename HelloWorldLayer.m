@@ -1,10 +1,5 @@
 //
 //  HelloWorldLayer.m
-//<<<<<<< HEAD
-//  Traffic
-//=======
-//  Car Project
-//>>>>>>> 8b70d25d2d82869278649254a393e360aeeb4f1e
 //
 //  Created by iD Student Account on 7/5/11.
 //  Copyright __MyCompanyName__ 2011. All rights reserved.
@@ -16,9 +11,11 @@
 #import "CCTouchDispatcher.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "YOULOSE.h"
+#import "GameKitConnector.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
+@synthesize connection;
 
 +(CCScene *) scene{
 	// 'scene' is an autorelease object.
@@ -55,38 +52,35 @@
 		lifeafter = 3;
 		life = 3;
 		//creating myCar
-		
-        myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
-        myCar.position = ccp(160,70);
-        [self addChild:myCar z:10];
-        self.isTouchEnabled=YES;
-        
-        
-        roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
-        roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
-        roadWay.position = ccp(160,0);
-        [self addChild:roadWay z:0];
-        roadWay2.position = ccp(160,1058);
-        [self addChild:roadWay2 z:0];		
-        [self schedule:@selector(nextFrame:)];
-		enemyspeed=-3;
-		roadspeed=-5;
+
+    myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
+    myCar.position = ccp(160,70);
+    [self addChild:myCar z:10];
+    self.isTouchEnabled=YES;
+    
+    
+    roadWay=[CCSprite spriteWithFile:@"Highway3.png"];
+    roadWay2=[CCSprite spriteWithFile:@"Highway3 copy.png"];
+    roadWay.position = ccp(160,0);
+    [self addChild:roadWay z:0];
+    roadWay2.position = ccp(160,1058);
+    [self addChild:roadWay2 z:0];		
+    [self schedule:@selector(nextFrame:)];
+
+		enemyspeed =- 3;
+		roadspeed =- 5;
 	}
-	//supposedly going to make a score counter in the left corner
-	//however, it makes a "Too few arguments to function" error.
 	scorecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score: %i", score] fontName:@"Marker Felt" fontSize:20];
-		//next line doesnt create errors
 	scorecounter.position =  ccp(50, 50);
-	//[self addChild:/*we need a sprite but we dont have one*/];
-	//life counter
+
 	[self addChild:scorecounter z:0];
 	lifecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Life: %i", life] fontName:@"Marker Felt" fontSize:20];
 	
 	lifecounter.position =  ccp(270, 50);
-    //[self addChild:/*we need a sprite but we dont have one*/];
+
 	[self addChild:lifecounter z:0];
-    return self;
-	
+  
+  return self;
 }
 
 -(void)nextFrame:(ccTime)dt{
@@ -189,49 +183,33 @@
 			i = i - 70;
 		}
 		
-    }
+  }
+  
     x++;
     for(CCSprite *car in enemies){
-        
-        if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-            //NSLog(@"collision  ");
-            CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
-            AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-			roadspeed=0;
-			enemyspeed=3;
-			x=0;
-			i=-180; //time before cars spawn again
+          if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
+              NSLog(@"collision  ");
+              CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
+              AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+            roadspeed=0;
+            enemyspeed=3;
+            x=0;
+            i=-180; //time before cars spawn again
             [myCar setTexture:texture];
-			if(lifeafter==0){
-				CCScene * newScene = [YOULOSE scene];
-				[[CCDirector sharedDirector] replaceScene:newScene];
-				NSLog(@"Lost");
-				CCLayer *layer=[newScene getChildByTag:2];
-				[layer loser:score];
-				lifeafter--;
-				if(hit == true){
-					life -= 1;
-				}
-				
-			}
+            
+        if(lifeafter < 0){
+          CCScene * newScene = [YOULOSE scene];
+          [[CCDirector sharedDirector] replaceScene:newScene];
+          NSLog(@"Lost");
+          CCLayer *layer=[newScene getChildByTag:2];
+          [layer loser:score];
+          lifeafter--;
+          if(hit == true){
+            life -= 1;
+          }
         }
-		
-		//collision code
-		for(CCSprite *car in enemies){
-			
-			if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
-				NSLog(@"collision  ");
-				CCTexture2D *texture = [[CCTexture2D alloc] initWithImage:[UIImage imageNamed:@"Explosion.png"]];
-				AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-				roadspeed=0;
-				enemyspeed=3;
-				x=0;
-				i=-180; //time before trafficCars spawn again
-				[myCar setTexture:texture];
-				life--;
-			}
-			
-		}
+      }
+    }
 		
 		//time we get before our car spawns
 		if(x>120){
@@ -241,7 +219,7 @@
 			[myCar setTexture:texture];		
 		}
 	}
-}
+
 	
 	-(int) randomlane {
 		
@@ -295,20 +273,4 @@
 		[super dealloc];
 	}
 
--(BOOL) ccTouchesBegan:(UITouch *)touches withEvent:(UIEvent *)event
-{
-	touches = touch;
-	[self spriteCheck: touches;
-	 return YES;
-}
-	 
-	 -(void) spriteCheck: (UITouch *)touchLocation{
-		 CGPoint locationt=[touchLocation locationInView:
-							[touchLocation view]];
-		 locationt = [[Director sharedDirector]
-					  converCoordinate:locationt];
-		 if (CGRectContainsPoint(pauseButtonRect, locationt)) {
-			 [self pauseButton];
-		 }
-	 }	 
 	@end

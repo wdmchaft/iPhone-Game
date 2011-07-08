@@ -11,10 +11,12 @@
 #import "mainMenuLayer.h"
 #import "CCTouchDispatcher.h"
 #import "HelloWorldLayer.h"
-
+#import "GameKitConnector.h"
 
 // HelloWorldLayer implementation
 @implementation MainMenuLayer
+
+@synthesize connection;
 
 +(CCScene *) scene
 {
@@ -31,29 +33,18 @@
 	return scene;
 }
 
-// on "init" you need to initialize your instance
--(id) init
-{
-	// always call "super" init
-	// Apple recommends to re-assign "self" with the "super" return value
+-(id) init {
 	if( (self=[super init])) {
 		
-		// create and initialize a Label
-		
-		
-		
-		// ask director the the window size
-		//CGSize size = [[CCDirector sharedDirector] winSize];
-		
-		// position the label on the center of the screen
-		//label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
-		//[self addChild: label];
 		CCMenuItem *item = [CCMenuItemImage itemFromNormalImage:@"BUTTON-FOR-THE-OBESE-KID.png" selectedImage:@"BUTTON-FOR-THE-OBESE-KID.png" target: self selector:@selector(startGame:)];
 		item.position = ccp(160, 150);
 		
-		CCMenu *menu = [CCMenu menuWithItems:item, nil];
+    
+    CCMenuItem *item2 = [CCMenuItemImage itemFromNormalImage:@"Cheats.png" selectedImage:@"Cheats.png" target: self selector:@selector(start2Player:)];
+		item.position = ccp(60, 250);
+
+    
+		CCMenu *menu = [CCMenu menuWithItems:item, item2, nil];
 		menu.position = CGPointZero;
 		[self addChild:menu];
 		CCLabelTTF *welcome = [CCLabelTTF labelWithString:@"Welcome to Traffic" fontName:@"Marker Felt" fontSize:40];
@@ -64,16 +55,6 @@
 		[self addChild: welcome];
 		
 		self.isTouchEnabled=YES;
-		/*CCMenuItem *item = [CCMenuItemImage itemFromNormalImage:@"Cheats.png" selectedImage:@"Cheats.png" target: self selector:@selector(startGame:)];
-		item.position = ccp(250, 100);
-		
-		CCMenu *menu = [CCMenu menuWithItems:item, nil];
-		menu.position = CGPointZero;
-		[self addChild:menu];*/
-		
-		
-		self.isTouchEnabled=YES;
-		
 	}
 	
 	return self;
@@ -82,14 +63,26 @@
 -(void)startGame: (id)sender{
 	CCScene * newScene = [HelloWorldLayer scene];
 	[[CCDirector sharedDirector] replaceScene:newScene];
-	NSLog(@"SHIZNIT BIZZATCHES");
 }
-/*-(void)startGame: (id) sender {
-	CCScene * newScene = [CheatsLayer scene];
-	[[CCDirector sharedDirector] replaceScene:newScene];
-} */
 
-// on "dealloc" you need to release all your retained objects
+-(void)start2Player: (id)sender {
+  connection = [[[GameKitConnector alloc] init] retain];
+  connection.delegate = self;
+  [connection showPlayerPicker];
+}
+
+-(void) connected {
+  CCScene * newScene = [HelloWorldLayer scene];
+  HelloWorldLayer *layer =  [[newScene children] objectAtIndex:0];
+  
+//  layer.connection = connection;
+//  layer.connection.delegate = newScene;
+
+	[[CCDirector sharedDirector] replaceScene:newScene];
+
+}
+
+
 
 
 - (void) dealloc

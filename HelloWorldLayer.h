@@ -10,9 +10,12 @@
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
+#import "ORLocalNetworkProtocol.h"
+
+@class GameKitConnector;
 
 // HelloWorldLayer
-@interface HelloWorldLayer : CCLayer
+@interface HelloWorldLayer : CCLayer <ORLocalNetworkProtocol>
 {
 	CCSprite *trafficCar;
 	int trafficPositionX;
@@ -41,9 +44,12 @@
 	CCLabelTTF *lifecounter;
 	bool hit;
 	int lifeafter;
+  
+  GameKitConnector *connection;
 }
 
-// returns a CCScene that contains the HelloWorldLayer as the only child
+@property(retain, nonatomic) GameKitConnector *connection;
+
 +(CCScene *) scene;
 
 -(int) randomlane;
