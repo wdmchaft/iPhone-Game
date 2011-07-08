@@ -44,6 +44,7 @@
 	CCLabelTTF *lifecounter;
 	bool hit;
 	int lifeafter;
+    BOOL isHost;
   
   
   bool multiplayer;

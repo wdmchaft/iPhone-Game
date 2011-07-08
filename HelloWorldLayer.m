@@ -52,6 +52,7 @@
 		lifeafter = 3;
 		life = 3;
     multiplayer = false;
+        isHost=false;
     
 		//creating myCar
     myCar=[CCSprite spriteWithFile:@"car_sprite 2.png"];
@@ -297,6 +298,9 @@
   self.connection = gkConnection;
   self.connection.delegate = self;
   multiplayer = true;
+    if(!isHost){
+        [self.connection sendArray:[NSArray arrayWithObject:@"set_host"]];
+    }
   
   player2Car=[CCSprite spriteWithFile:@"car_player_2.png"];
   player2Car.position = ccp(100,70);

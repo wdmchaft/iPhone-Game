@@ -13,8 +13,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FD1139B13C3994400F01AFF"
-               BuildableName = "RacingGame.app"
+               BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+               BuildableName = "Traffic.app"
                BlueprintName = "RacingGame"
                ReferencedContainer = "container:RacingGame.xcodeproj">
             </BuildableReference>
@@ -40,8 +40,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FD1139B13C3994400F01AFF"
-            BuildableName = "RacingGame.app"
+            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+            BuildableName = "Traffic.app"
             BlueprintName = "RacingGame"
             ReferencedContainer = "container:RacingGame.xcodeproj">
          </BuildableReference>
@@ -59,8 +59,8 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FD1139B13C3994400F01AFF"
-            BuildableName = "RacingGame.app"
+            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+            BuildableName = "Traffic.app"
             BlueprintName = "RacingGame"
             ReferencedContainer = "container:RacingGame.xcodeproj">
          </BuildableReference>
