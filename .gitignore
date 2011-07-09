@@ -13,3 +13,6 @@ build/
 
 *.mode1v3
 *.mode2v3
+
+RacingGame.xcodeproj/xcuserdata/
+RacingGame.xcodeproj/project.xcworkspace/xcuserdata/

@@ -7,35 +7,16 @@
 //
 
 
-/*Instructions on how to place into game
 
-
-> Place this in the header file
- (at the top)
- #import "GameKitConnector.h";
- 
- In the class definition
- GameKitConnector * connection;
-
- 
- 
-> Insert this statement in the init statement of the scene
-connection = [[[GameKitConnector alloc] init] retain];
-connection.delegate = self;
-[connection showPlayerPicker];
-
- 
-> To send information use
- [connection sendArray:array];
- 
->Place this method in your scene
- -(void)recieveArray:(NSArray*)array{
-    //Insert nessicary code here
- }
- 
- Have Fun!
- */
 #import "GameKitConnector.h"
+
+// private non-API related methods
+@interface GameKitConnector() 
+- (void)decideHost;
+@end 
+
+
+
 
 @implementation GameKitConnector
 @synthesize delegate, peerPicker, session;
@@ -51,23 +32,18 @@ connection.delegate = self;
     return self;
 }
 
--(void)showPlayerPicker {
+-(void)startPeerToPeer {
   //Show the connector
 	[peerPicker show];
 }
 
+-(void)startHostServer {
+  isHostServer = YES;
+  [peerPicker show];
+}
 
 
 #pragma mark PeerPickerControllerDelegate stuff
-
-- (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type{
-	if (type == GKPeerPickerConnectionTypeOnline) {
-    picker.delegate = nil;
-    [picker dismiss];
-    [picker autorelease];
-  }
-}
-
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker {
   if([delegate respondsToSelector:@selector(connectionCancelled)]){
     [delegate connectionCancelled];
@@ -94,36 +70,59 @@ connection.delegate = self;
   [picker dismiss];
   [picker autorelease];
 	// Start your game.
-  [delegate connected];
-}
-
-- (void)session:(GKSession *)session peer:(NSString *)peerID didChangeState:(GKPeerConnectionState)state {
-	switch ((int) state) {
-    case GKPeerStateConnected:
-			NSLog( @"Connected to %@", peerID);
-			break;
-		
-    case GKPeerStateDisconnected:
-			
-			break;
+  
+  if (isHostServer) {
+      // when emulating host / server over a p2p network
+      // there needs to be a way to detemine host / client
+      // I do this by a small game of Rock Paper Scissors
+    [self decideHost];
+  }else{
+    [delegate connected];
   }
 }
 
--(void)sendArray:(NSArray *)array{
-    NSError *error;
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:array];
-    [self.session sendDataToAllPeers:data withDataMode:GKSendDataReliable error:&error];
-    if(error){
-        //  NSLog(@"ERROR sending string over network %@", [error localizedDescription]);
-    }
+-(void) sendCommand:(NSString*)command {
+  [self sendCommand:command withArgument:@""];
+} 
+
+
+-(void) sendCommand:(NSString*)command withFloat:(float)argument{
+  [self sendCommand:command withArgument:[NSString stringWithFormat:@"%f", argument]];
+} 
+
+-(void) sendCommand:(NSString*)command withInt:(int)argument{
+  [self sendCommand:command withArgument:[NSString stringWithFormat:@"%d", argument]];
+} 
+
+-(void) sendCommand:(NSString*)command withArgument:(NSString*)argument{
+  NSError *error;
+  NSData *data = [NSKeyedArchiver archivedDataWithRootObject:[NSArray arrayWithObjects:command, argument, nil]];
+  [self.session sendDataToAllPeers:data withDataMode:GKSendDataReliable error:&error];
 }
 
 - (void) receiveData:(NSData *)data fromPeer:(NSString *)peer inSession: (GKSession *)session context:(void *)context{
     NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    [delegate recievedArray:array];
+    if([array count] == 2){
+      
+      if([@"_HOST_SERVER" isEqualToString:[array objectAtIndex:0]]){
+        NSString * theirNumber = [array objectAtIndex:1];
+        if ( _hostGuess > [theirNumber intValue]) {
+          [delegate isHost];
+        }else{
+          [delegate isClient];
+        }
+        return;
+      }
+      
+      [delegate recievedCommand:[array objectAtIndex:0] withArgument:[array objectAtIndex:1]];
+    }
 }
 
-
+-(void) decideHost {
+  _hostGuess =  arc4random() % 10;
+  NSString * guess = [NSString stringWithFormat:@"%d", _hostGuess];
+  [self sendCommand:@"_HOST_SERVER" withArgument:guess];
+}
 
 
 @end

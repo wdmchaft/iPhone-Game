@@ -26,7 +26,6 @@
 	int carC;
 	int carD;
 	CCSprite *myCar;
-	CCLabelTTF * welcome;
   
   bool connected;
   GameKitConnector *connection;
@@ -37,6 +36,8 @@
   
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
--(void)startGame;
+
+-(void)startGame: (id)sender;
+-(void)start2Player: (id)sender;
 
 @end

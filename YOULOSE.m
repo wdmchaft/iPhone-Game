@@ -37,7 +37,7 @@
 }
 
 -(void)loser:(int)score{
-	CCLabelTTF *finalscore = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Your final score was: %i", score] fontName:@"Marker Felt" fontSize:20];
+	finalscore = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Your final score was: %i", score] fontName:@"Marker Felt" fontSize:20];
 	finalscore.position =  ccp(160, 300);
 		[self addChild: finalscore];
 }

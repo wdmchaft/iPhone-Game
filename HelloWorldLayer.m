@@ -68,8 +68,8 @@
     [self addChild:roadWay2 z:0];		
     [self schedule:@selector(nextFrame:)];
 
-		enemyspeed =- 3;
-		roadspeed =- 5;
+		enemyspeed -= 3;
+		roadspeed -= 5;
 	}
 	scorecounter = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"Score: %i", score] fontName:@"Marker Felt" fontSize:20];
 	scorecounter.position =  ccp(50, 15);
@@ -91,8 +91,9 @@
     if(x>120){
         score++;
     }
-    [self.connection sendArray:[NSArray arrayWithObjects:[NSString stringWithFormat:@"score"],[NSNumber numberWithInt:score],nil]];
-    
+  if(multiplayer){
+        [self.connection sendCommand:@"score" withArgument:[NSString stringWithFormat:@"%f", score]];
+  }
 	lifecounter.string = [NSString stringWithFormat:@"Life: %i", lifeafter];
 	scorecounter.string = [NSString stringWithFormat:@"Score: %i", score];
     NSLog(@"%i",friendscore);
@@ -199,7 +200,7 @@
     for(CCSprite *car in enemies){
           if(CGRectIntersectsRect([car boundingBox], [myCar boundingBox]) ) {
             if(multiplayer){
-              [self.connection sendArray:[NSArray arrayWithObject:@"car_crash"]];
+              [self.connection sendCommand:@"car_crash"];
             }
             
             NSLog(@"collision  ");
@@ -209,12 +210,12 @@
             
         if(lifeafter < 0){
           if (multiplayer) {
-            [self.connection sendArray:[NSArray arrayWithObject:@"game_over"]];
+            [self.connection sendCommand:@"game_over"];
           }
           CCScene * newScene = [YOULOSE scene];
           [[CCDirector sharedDirector] replaceScene:newScene];
           NSLog(@"Lost");
-          CCLayer *layer=[newScene getChildByTag:2];
+          CCLayer *layer= [newScene getChildByTag:2];
           [layer loser:score];
           lifeafter--;
           if(hit == true){
@@ -316,16 +317,13 @@
 
 -(void) connected { NSLog(@"doing nothing.."); }
 
--(void) recievedArray:(NSArray*)response {
-  //first object is always command
-  NSString * command =  [response objectAtIndex:0];
-
+-(void)recievedCommand:(NSString *)command withArgument:(NSString *)argument{
   
   if( [command isEqualToString:@"you_won"] ){
     [self youWon];
   }
-    if([command isEqualToString:@"score"]){
-        friendscore=[[response objectAtIndex:1] intValue];
+  if ([command isEqualToString:@"score"]){
+        friendscore=[argument intValue];
     }
 }
 
