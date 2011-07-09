@@ -108,7 +108,10 @@
         NSString * theirNumber = [array objectAtIndex:1];
         if ( _hostGuess > [theirNumber intValue]) {
           [delegate isHost];
-        }else{
+        }else if(_hostGuess==[theirNumber intValue]){
+            [self decideHost];
+        }
+        else{
           [delegate isClient];
         }
         return;
